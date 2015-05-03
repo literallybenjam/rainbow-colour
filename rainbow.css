@@ -8,7 +8,7 @@
 
 /*  TRANSITIONS  */
 
-a[href], *[data-colour-transition] {
+a[href], *.colour-link, *[data-colour-transition] {
     transition: color .5s, background-color .5s, line-colour .5s, fill .5s, stroke .5s;
     transition: color .5s, background-color .5s, line-colour .5s, outline-color .5s, fill .5s, stroke .5s;
     transition: color .5s, background-color .5s, line-colour .5s, outline-color .5s, text-decoration-color .5s, fill .5s, stroke .5s;
@@ -290,6 +290,254 @@ a[href], *[data-colour-transition] {
 }
 
 /*  ROOT COLOURS  */
+
+*:root[data-colour|="cyan-light"] {
+    color: #bfe7f2;
+}
+
+*:root[data-colour|="blue-light"] {
+    color: #d0d1f6;
+}
+
+*:root[data-colour|="purple-light"] {
+    color: #eabdff;
+}
+
+*:root[data-colour|="magenta-light"] {
+    color: #f0b2d8;
+}
+
+*:root[data-colour|="red-light"] {
+    color: #f9a59b;
+}
+
+*:root[data-colour|="yellow-light"] {
+    color: #fcf0be;
+}
+
+*:root[data-colour|="green-light"] {
+    color: #d5fcbb;
+}
+
+*:root[data-colour|="teal-light"] {
+    color: #bdf0df;
+}
+
+*:root[data-colour|="cyan-dark"] {
+    color: #00495c;
+}
+
+*:root[data-colour|="blue-dark"] {
+    color: #383966;
+}
+
+*:root[data-colour|="purple-dark"] {
+    color: #4c3159;
+}
+
+*:root[data-colour|="magenta-dark"] {
+    color: #592846;
+}
+
+*:root[data-colour|="red-dark"] {
+    color: #5d2721;
+}
+
+*:root[data-colour|="yellow-dark"] {
+    color: #4f420d;
+}
+
+*:root[data-colour|="green-dark"] {
+    color: #1f4505;
+}
+
+*:root[data-colour|="teal-dark"] {
+    color: #1c4b3b;
+}
+
+*:root[data-colour|="cyan"] {
+    color: #31b9db;
+}
+
+*:root[data-colour|="blue"] {
+    color: #7476fc;
+}
+
+*:root[data-colour|="purple"] {
+    color: #c258f2;
+}
+
+*:root[data-colour|="magenta"] {
+    color: #e63ca4;
+}
+
+*:root[data-colour|="red"] {
+    color: #e83f2c;
+}
+
+*:root[data-colour|="yellow"] {
+    color: #f6d037;
+}
+
+*:root[data-colour|="green"] {
+    color: #6ad622;
+}
+
+*:root[data-colour|="teal"] {
+    color: #49cfa2;
+}
+
+*:root[data-colour|="white"] {
+    color: #f5f5f5;
+}
+
+*:root[data-colour|="white"] a[href]:hover, *:root[data-colour|="white"] *.colour-link:hover,
+*:root[data-colour|="white"] aside, *:root[data-colour|="white"] figcaption, *:root[data-colour|="white"] footer, *:root[data-colour|="white"] small, *:root[data-colour|="white"] *.colour-secondary {
+    color: #a3a3a3;
+}
+
+*:root[data-colour|="bright"] {
+    color: #cccccc;
+}
+
+*:root[data-colour|="bright"] *.colour-accent,
+*:root[data-colour|="bright"] code, *root[data-colour|="bright"] pre, *:root[data-colour|="bright"] *.colour-code,
+*:root[data-colour|="bright"] *.colour-emphasis,
+*:root[data-colour|="bright"] *.colour-heading,
+*:root[data-colour|="bright"] a[href], *:root[data-colour|="bright"] *.colour-link,
+*:root[data-colour|="bright"] *.colour-strong {
+    color: #f5f5f5;
+}
+
+*:root[data-colour|="bright"] a[href]:hover, *:root[data-colour|="bright"] *.colour-link:hover,
+*:root[data-colour|="bright"] aside, *:root[data-colour|="bright"] figcaption, *:root[data-colour|="bright"] footer, *:root[data-colour|="bright"] small, *:root[data-colour|="bright"] *.colour-secondary {
+    color: #828282;
+}
+
+*:root[data-colour|="light"] {
+    color: #a3a3a3;
+}
+
+*:root[data-colour|="light"] code, *root[data-colour|="light"] pre, *:root[data-colour|="light"] *.colour-code,
+*:root[data-colour|="light"] *.colour-strong {
+    color: #f5f5f5;
+}
+
+*:root[data-colour|="light"] *.colour-accent,
+*:root[data-colour|="light"] *.colour-emphasis,
+*:root[data-colour|="light"] *.colour-heading,
+*:root[data-colour|="light"] a[href], *:root[data-colour|="light"] *.colour-link {
+    color: #cccccc;
+}
+
+*:root[data-colour|="light"] a[href]:hover, *:root[data-colour|="light"] *.colour-link:hover,
+*:root[data-colour|="light"] aside, *:root[data-colour|="light"] figcaption, *:root[data-colour|="light"] footer, *:root[data-colour|="light"] small, *:root[data-colour|="light"] *.colour-secondary {
+    color: #636363;
+}
+
+*:root[data-colour|="medium"] {
+    color: #828282;
+}
+
+*:root[data-colour|="medium"] code, *root[data-colour|="medium"] pre, *:root[data-colour|="medium"] *.colour-code {
+    color: #f5f5f5;
+}
+
+*:root[data-colour|="medium"] *.colour-strong {
+    color: #cccccc;
+}
+
+*:root[data-colour|="medium"] *.colour-accent,
+*:root[data-colour|="medium"] *.colour-emphasis,
+*:root[data-colour|="medium"] *.colour-heading,
+*:root[data-colour|="medium"] a[href], *:root[data-colour|="medium"] *.colour-link {
+    color: #a3a3a3;
+}
+
+*:root[data-colour|="medium"] a[href]:hover, *:root[data-colour|="medium"] *.colour-link:hover,
+*:root[data-colour|="medium"] aside, *:root[data-colour|="medium"] figcaption, *:root[data-colour|="medium"] footer, *:root[data-colour|="medium"] small, *:root[data-colour|="medium"] *.colour-secondary {
+    color: #3b3b3b;
+}
+
+*:root[data-colour|="regular"] {
+    color: #636363;
+}
+
+*:root[data-colour|="regular"] code, *root[data-colour|="regular"] pre, *:root[data-colour|="regular"] *.colour-code {
+    color: #0c0c0c;
+}
+
+*:root[data-colour|="regular"] *.colour-strong {
+    color: #1c1c1c;
+}
+
+*:root[data-colour|="regular"] *.colour-accent,
+*:root[data-colour|="regular"] *.colour-emphasis,
+*:root[data-colour|="regular"] *.colour-heading,
+*:root[data-colour|="regular"] a[href], *:root[data-colour|="regular"] *.colour-link {
+    color: #3b3b3b;
+}
+
+*:root[data-colour|="regular"] a[href]:hover, *:root[data-colour|="regular"] *.colour-link:hover,
+*:root[data-colour|="regular"] aside, *:root[data-colour|="regular"] figcaption, *:root[data-colour|="regular"] footer, *:root[data-colour|="regular"] small, *:root[data-colour|="regular"] *.colour-secondary {
+    color: #a3a3a3;
+}
+
+*:root[data-colour|="dark"] {
+    color: #3b3b3b;
+}
+
+*:root[data-colour|="dark"] code, *root[data-colour|="dark"] pre, *:root[data-colour|="dark"] *.colour-code,
+*:root[data-colour|="dark"] *.colour-strong {
+    color: #0c0c0c;
+}
+
+*:root[data-colour|="dark"] *.colour-accent,
+*:root[data-colour|="dark"] *.colour-emphasis,
+*:root[data-colour|="dark"] *.colour-heading,
+*:root[data-colour|="dark"] a[href], *:root[data-colour|="dark"] *.colour-link {
+    color: #1c1c1c;
+}
+
+*:root[data-colour|="dark"] a[href]:hover, *:root[data-colour|="dark"] *.colour-link:hover,
+*:root[data-colour|="dark"] aside, *:root[data-colour|="dark"] figcaption, *:root[data-colour|="dark"] footer, *:root[data-colour|="dark"] small, *:root[data-colour|="dark"] *.colour-secondary {
+    color: #828282;
+}
+
+*:root[data-colour|="dim"] {
+    color: #1c1c1c;
+}
+
+*:root[data-colour|="dim"] *.colour-accent,
+*:root[data-colour|="dim"] code, *root[data-colour|="dim"] pre, *:root[data-colour|="dim"] *.colour-code,
+*:root[data-colour|="dim"] *.colour-emphasis,
+*:root[data-colour|="dim"] *.colour-heading,
+*:root[data-colour|="dim"] a[href], *:root[data-colour|="dim"] *.colour-link,
+*:root[data-colour|="dim"] *.colour-strong {
+    color: #0c0c0c;
+}
+
+*:root[data-colour|="dim"] a[href]:hover, *:root[data-colour|="dim"] *.colour-link:hover,
+*:root[data-colour|="dim"] aside, *:root[data-colour|="dim"] figcaption, *:root[data-colour|="dim"] footer, *:root[data-colour|="dim"] small, *:root[data-colour|="dim"] *.colour-secondary {
+    color: #636363;
+}
+
+*:root[data-colour|="black"] {
+    color: #0c0c0c;
+}
+
+*:root[data-colour|="black"] a[href]:hover, *:root[data-colour|="black"] *.colour-link:hover,
+*:root[data-colour|="black"] aside, *:root[data-colour|="black"] figcaption, *:root[data-colour|="black"] footer, *:root[data-colour|="black"] small, *:root[data-colour|="black"] *.colour-secondary {
+    color: #3b3b3b;
+}
+
+*:root[data-colour|="transparent"] {
+    color: transparent;
+}
+
+*:root[data-colour|="inherit"] {
+    color: inherit;
+}
 
 *:root[data-colour-background|="cyan-light"] {
     background-color: #bfe7f2;

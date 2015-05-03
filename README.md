@@ -24,7 +24,7 @@ You can use the `data-colour-accent` attribute to set the accent colour of a pag
 
 ##  COLOUR-VALUES  ##
 
-There are eight colour-values available for use in RAINBOW:
+There are eight colours available for use in RAINBOW:
 
 `cyan` `blue` `purple` `magenta` `red` `yellow` `green` `teal`
 
@@ -53,4 +53,4 @@ Transitions require browser support of the `transition` CSS property.
 
 You can use the following classes to mimic the settings for certain elements:
 
-`colour-code` `colour-heading` `colour-link` `colour-mark` `colour-secondary` `colour-strong-accent` `colour-weak-accent`
+`colour-accent` `colour-code` `colour-emphasis` `colour-heading` `colour-link` `colour-mark` `color-secondary` `colour-strong`
