@@ -6,7 +6,8 @@ A CSS colour palette providing a rainbow of colours
 
 To use the colours provided in RAINBOW, set the `data-colour` or the `data-colour-background` attribute on an element to one or more colour-values (explained below).
 
-Setting these attributes on the root element of the page may have a special effect on descendant elements in order to create a clearer and more cohesive style; as such, specifying a `data-colour` and a `data-colour-background` for the root element is highly recommended. You can use the `data-colour-accent` attribute to set the accent colour of a page; this only has an effect when used on the root element.
+Setting these attributes on the root element of the page may have a special effect on descendant elements in order to create a clearer and more cohesive style; as such, specifying a `data-colour` and a `data-colour-background` for the root element is highly recommended.
+You can use the `data-colour-accent` attribute to set the accent colour of a page; this only has an effect when used on the root element.
 
 ```html
 <!DOCTYPE html>
@@ -27,7 +28,8 @@ There are eight colour-values available for use in RAINBOW:
 
 `cyan` `blue` `purple` `magenta` `red` `yellow` `green` `teal`
 
-Each colour-value may be suffexed with `-light` or `-dark` to lighten or darken the colour. Other suffixes will not affect the colour.
+Each colour-value may be suffexed with `-light` or `-dark` to lighten or darken the colour.
+Other suffixes will not affect the colour.
 
 There are also eight greys in RAINBOW:
 
@@ -41,7 +43,9 @@ These correspond to their values in CSS.
 
 ##  CSS TRANSITIONS  ##
 
-You can apply a CSS transition to an element with `data-colour-transition`. This is the default behaviour for links. (Note that this may override transitions set elsewhere!)
+You can apply a CSS transition to an element with `data-colour-transition`.
+This is the default behaviour for links.
+(Note that this may override transitions set elsewhere!)
 
 Transitions require browser support of the `transition` CSS property.
 
