@@ -504,7 +504,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 }
 
 *:root[data-colour|="bright"] *.colour-accent,
-*:root[data-colour|="bright"] code, *root[data-colour|="bright"] pre, *:root[data-colour|="bright"] *.colour-code,
+*:root[data-colour|="bright"] code, *:root[data-colour|="bright"] pre, *:root[data-colour|="bright"] *.colour-code,
 *:root[data-colour|="bright"] *.colour-emphasis,
 *:root[data-colour|="bright"] *.colour-heading,
 *:root[data-colour|="bright"] a[href], *:root[data-colour|="bright"] *.colour-link,
@@ -525,7 +525,7 @@ a[href], *.colour-link, *[data-colour-transition] {
     background-color: #a3a3a3;
 }
 
-*:root[data-colour|="light"] code, *root[data-colour|="light"] pre, *:root[data-colour|="light"] *.colour-code,
+*:root[data-colour|="light"] code, *:root[data-colour|="light"] pre, *:root[data-colour|="light"] *.colour-code,
 *:root[data-colour|="light"] *.colour-strong {
     color: #f5f5f5;
 }
@@ -550,7 +550,7 @@ a[href], *.colour-link, *[data-colour-transition] {
     background-color: #828282;
 }
 
-*:root[data-colour|="medium"] code, *root[data-colour|="medium"] pre, *:root[data-colour|="medium"] *.colour-code {
+*:root[data-colour|="medium"] code, *:root[data-colour|="medium"] pre, *:root[data-colour|="medium"] *.colour-code {
     color: #f5f5f5;
 }
 
@@ -578,7 +578,7 @@ a[href], *.colour-link, *[data-colour-transition] {
     background-color: #636363;
 }
 
-*:root[data-colour|="regular"] code, *root[data-colour|="regular"] pre, *:root[data-colour|="regular"] *.colour-code {
+*:root[data-colour|="regular"] code, *:root[data-colour|="regular"] pre, *:root[data-colour|="regular"] *.colour-code {
     color: #0c0c0c;
 }
 
@@ -606,7 +606,7 @@ a[href], *.colour-link, *[data-colour-transition] {
     background-color: #3b3b3b;
 }
 
-*:root[data-colour|="dark"] code, *root[data-colour|="dark"] pre, *:root[data-colour|="dark"] *.colour-code,
+*:root[data-colour|="dark"] code, *:root[data-colour|="dark"] pre, *:root[data-colour|="dark"] *.colour-code,
 *:root[data-colour|="dark"] *.colour-strong {
     color: #0c0c0c;
 }
@@ -632,7 +632,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 }
 
 *:root[data-colour|="dim"] *.colour-accent,
-*:root[data-colour|="dim"] code, *root[data-colour|="dim"] pre, *:root[data-colour|="dim"] *.colour-code,
+*:root[data-colour|="dim"] code, *:root[data-colour|="dim"] pre, *:root[data-colour|="dim"] *.colour-code,
 *:root[data-colour|="dim"] *.colour-emphasis,
 *:root[data-colour|="dim"] *.colour-heading,
 *:root[data-colour|="dim"] a[href], *:root[data-colour|="dim"] *.colour-link,
