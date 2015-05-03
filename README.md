@@ -4,28 +4,13 @@ A CSS colour palette providing a rainbow of colours
 
 ##  BASIC USAGE  ##
 
-To use the colours provided in RAINBOW, set the `data-colour` attribute on an element to one or more colour-values (explained below).
+To use the colours provided in RAINBOW, set the `data-colour` or the `data-colour-background` attribute on an element to one or more colour-values (explained below).
 
-The `data-colour` attribute normally just changes the text colour, but when applied to the root element it is used to manipulate the overall look of the page. For example, in
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Sample #1</title>
-        <link rel="stylesheet" type="text/css" href="rainbow.css">
-    </head>
-    <body data-colour="dim">
-        dim text on the default background
-    </body>
-</html>
-```
-
-the text-color of the page is set to `dim`, but in
+Setting these attributes on the root element of the page may have a special effect on descendant elements in order to create a clearer and more cohesive style; as such, specifying a `data-colour` and a `data-colour-background` for the root element is highly recommended. You can use the `data-colour-accent` attribute to set the accent colour of a page; this only has an effect when used on the root element.
 
 ```html
 <!DOCTYPE html>
-<html data-colour="dim">
+<html data-colour="light" data-colour-background="dim" data-colour-accent="red">
     <head>
         <title>Sample #2</title>
         <link rel="stylesheet" type="text/css" href="rainbow.css">
@@ -35,8 +20,6 @@ the text-color of the page is set to `dim`, but in
     </body>
 </html>
 ```
-
-the background of the page is set to `dim`, and the text-color of the page is a light grey. You can use the `data-colour-accent` attribute to set the accent colour of a page; this only has an effect when used on the root element.
 
 ##  COLOUR-VALUES  ##
 

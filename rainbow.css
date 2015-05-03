@@ -17,268 +17,960 @@ a[href], *[data-colour-transition] {
 
 /*  BASIC COLOURING  */
 
-*[data-colour^="cyan-light"] {
+*[data-colour|="cyan-light"] {
     color: #bfe7f2;
 }
 
-*[data-colour^="blue-light"] {
+*[data-colour|="blue-light"] {
     color: #d0d1f6;
 }
 
-*[data-colour^="purple-light"] {
+*[data-colour|="purple-light"] {
     color: #eabdff;
 }
 
-*[data-colour^="magenta-light"] {
+*[data-colour|="magenta-light"] {
     color: #f0b2d8;
 }
 
-*[data-colour^="red-light"] {
+*[data-colour|="red-light"] {
     color: #f9a59b;
 }
 
-*[data-colour^="yellow-light"] {
+*[data-colour|="yellow-light"] {
     color: #fcf0be;
 }
 
-*[data-colour^="green-light"] {
+*[data-colour|="green-light"] {
     color: #d5fcbb;
 }
 
-*[data-colour^="teal-light"] {
+*[data-colour|="teal-light"] {
     color: #bdf0df;
 }
 
-*[data-colour^="cyan-dark"] {
+*[data-colour|="cyan-dark"] {
     color: #00495c;
 }
 
-*[data-colour^="blue-dark"] {
+*[data-colour|="blue-dark"] {
     color: #383966;
 }
 
-*[data-colour^="purple-dark"] {
+*[data-colour|="purple-dark"] {
     color: #4c3159;
 }
 
-*[data-colour^="magenta-dark"] {
+*[data-colour|="magenta-dark"] {
     color: #592846;
 }
 
-*[data-colour^="red-dark"] {
+*[data-colour|="red-dark"] {
     color: #5d2721;
 }
 
-*[data-colour^="yellow-dark"] {
+*[data-colour|="yellow-dark"] {
     color: #4f420d;
 }
 
-*[data-colour^="green-dark"] {
+*[data-colour|="green-dark"] {
     color: #1f4505;
 }
 
-*[data-colour^="teal-dark"] {
+*[data-colour|="teal-dark"] {
     color: #1c4b3b;
 }
 
-*[data-colour^="cyan"] {
+*[data-colour|="cyan"] {
     color: #31b9db;
 }
 
-*[data-colour^="blue"] {
+*[data-colour|="blue"] {
     color: #7476fc;
 }
 
-*[data-colour^="purple"] {
+*[data-colour|="purple"] {
     color: #c258f2;
 }
 
-*[data-colour^="magenta"] {
+*[data-colour|="magenta"] {
     color: #e63ca4;
 }
 
-*[data-colour^="red"] {
+*[data-colour|="red"] {
     color: #e83f2c;
 }
 
-*[data-colour^="yellow"] {
+*[data-colour|="yellow"] {
     color: #f6d037;
 }
 
-*[data-colour^="green"] {
+*[data-colour|="green"] {
     color: #6ad622;
 }
 
-*[data-colour^="teal"] {
+*[data-colour|="teal"] {
     color: #49cfa2;
 }
 
-*[data-colour^="white"] {
+*[data-colour|="white"] {
     color: #f5f5f5;
 }
 
-*[data-colour^="bright"] {
+*[data-colour|="bright"] {
     color: #cccccc;
 }
 
-*[data-colour^="light"] {
+*[data-colour|="light"] {
     color: #a3a3a3;
 }
 
-*[data-colour^="medium"] {
+*[data-colour|="medium"] {
     color: #828282;
 }
 
-*[data-colour^="regular"] {
+*[data-colour|="regular"] {
     color: #636363;
 }
 
-*[data-colour^="dark"] {
+*[data-colour|="dark"] {
     color: #3b3b3b;
 }
 
-*[data-colour^="dim"] {
+*[data-colour|="dim"] {
     color: #1c1c1c;
 }
 
-*[data-colour^="black"] {
+*[data-colour|="black"] {
     color: #0c0c0c;
 }
 
-/*  ROOT THEMES  */
+*[data-colour|="transparent"] {
+    color: transparent;
+}
 
-*:root[data-colour^="cyan-light"] {
+*[data-colour|="inherit"] {
+    color: inherit;
+}
+
+*[data-colour-background|="cyan-light"] {
     background-color: #bfe7f2;
 }
 
-*:root[data-colour^="blue-light"] {
+*[data-colour-background|="blue-light"] {
     background-color: #d0d1f6;
 }
 
-*:root[data-colour^="purple-light"] {
+*[data-colour-background|="purple-light"] {
     background-color: #eabdff;
 }
 
-*:root[data-colour^="magenta-light"] {
+*[data-colour-background|="magenta-light"] {
     background-color: #f0b2d8;
 }
 
-*:root[data-colour^="red-light"] {
+*[data-colour-background|="red-light"] {
     background-color: #f9a59b;
 }
 
-*:root[data-colour^="yellow-light"] {
+*[data-colour-background|="yellow-light"] {
     background-color: #fcf0be;
 }
 
-*:root[data-colour^="green-light"] {
+*[data-colour-background|="green-light"] {
     background-color: #d5fcbb;
 }
 
-*:root[data-colour^="teal-light"] {
+*[data-colour-background|="teal-light"] {
     background-color: #bdf0df;
 }
 
-*:root[data-colour^="cyan-dark"] {
+*[data-colour-background|="cyan-dark"] {
     background-color: #00495c;
 }
 
-*:root[data-colour^="blue-dark"] {
+*[data-colour-background|="blue-dark"] {
     background-color: #383966;
 }
 
-*:root[data-colour^="purple-dark"] {
+*[data-colour-background|="purple-dark"] {
     background-color: #4c3159;
 }
 
-*:root[data-colour^="magenta-dark"] {
+*[data-colour-background|="magenta-dark"] {
     background-color: #592846;
 }
 
-*:root[data-colour^="red-dark"] {
+*[data-colour-background|="red-dark"] {
     background-color: #5d2721;
 }
 
-*:root[data-colour^="yellow-dark"] {
+*[data-colour-background|="yellow-dark"] {
     background-color: #4f420d;
 }
 
-*:root[data-colour^="green-dark"] {
+*[data-colour-background|="green-dark"] {
     background-color: #1f4505;
 }
 
-*:root[data-colour^="teal-dark"] {
+*[data-colour-background|="teal-dark"] {
     background-color: #1c4b3b;
 }
 
-*:root[data-colour^="cyan"] {
+*[data-colour-background|="cyan"] {
     background-color: #31b9db;
 }
 
-*:root[data-colour^="blue"] {
+*[data-colour-background|="blue"] {
     background-color: #7476fc;
 }
 
-*:root[data-colour^="purple"] {
+*[data-colour-background|="purple"] {
     background-color: #c258f2;
 }
 
-*:root[data-colour^="magenta"] {
+*[data-colour-background|="magenta"] {
     background-color: #e63ca4;
 }
 
-*:root[data-colour^="red"] {
+*[data-colour-background|="red"] {
     background-color: #e83f2c;
 }
 
-*:root[data-colour^="yellow"] {
+*[data-colour-background|="yellow"] {
     background-color: #f6d037;
 }
 
-*:root[data-colour^="green"] {
+*[data-colour-background|="green"] {
     background-color: #6ad622;
 }
 
-*:root[data-colour^="teal"] {
+*[data-colour-background|="teal"] {
     background-color: #49cfa2;
 }
 
-*:root[data-colour^="white"] {
-    color: #636363;
+*[data-colour-background|="white"] {
     background-color: #f5f5f5;
 }
 
-*:root[data-colour^="bright"] {
-    color: #3b3b3b;
+*[data-colour-background|="bright"] {
     background-color: #cccccc;
 }
 
-*:root[data-colour^="light"] {
-    color: #1c1c1c;
+*[data-colour-background|="light"] {
     background-color: #a3a3a3;
 }
 
-*:root[data-colour^="medium"] {
-    color: #0c0c0c;
+*[data-colour-background|="medium"] {
     background-color: #828282;
 }
 
-*:root[data-colour^="regular"] {
-    color: #f5f5f5;
+*[data-colour-background|="regular"] {
     background-color: #636363;
 }
 
-*:root[data-colour^="dark"] {
-    color: #cccccc;
+*[data-colour-background|="dark"] {
     background-color: #3b3b3b;
 }
 
-*:root[data-colour^="dim"] {
-    color: #1c1c1c;
+*[data-colour-background|="dim"] {
     background-color: #1c1c1c;
 }
 
-*:root[data-colour^="black"] {
-    color: #0c0c0c;
+*[data-colour-background|="black"] {
     background-color: #0c0c0c;
+}
+
+*[data-colour-background|="transparent"] {
+    background-color: transparent;
+}
+
+*[data-colour-background|="inherit"] {
+    background-color: inherit;
+}
+
+/*  ROOT COLOURS  */
+
+*:root[data-colour-background|="cyan-light"] {
+    background-color: #bfe7f2;
+}
+
+*:root[data-colour-background|="blue-light"] {
+    background-color: #d0d1f6;
+}
+
+*:root[data-colour-background|="purple-light"] {
+    background-color: #eabdff;
+}
+
+*:root[data-colour-background|="magenta-light"] {
+    background-color: #f0b2d8;
+}
+
+*:root[data-colour-background|="red-light"] {
+    background-color: #f9a59b;
+}
+
+*:root[data-colour-background|="yellow-light"] {
+    background-color: #fcf0be;
+}
+
+*:root[data-colour-background|="green-light"] {
+    background-color: #d5fcbb;
+}
+
+*:root[data-colour-background|="teal-light"] {
+    background-color: #bdf0df;
+}
+
+*:root[data-colour-background|="cyan-dark"] {
+    background-color: #00495c;
+}
+
+*:root[data-colour-background|="blue-dark"] {
+    background-color: #383966;
+}
+
+*:root[data-colour-background|="purple-dark"] {
+    background-color: #4c3159;
+}
+
+*:root[data-colour-background|="magenta-dark"] {
+    background-color: #592846;
+}
+
+*:root[data-colour-background|="red-dark"] {
+    background-color: #5d2721;
+}
+
+*:root[data-colour-background|="yellow-dark"] {
+    background-color: #4f420d;
+}
+
+*:root[data-colour-background|="green-dark"] {
+    background-color: #1f4505;
+}
+
+*:root[data-colour-background|="teal-dark"] {
+    background-color: #1c4b3b;
+}
+
+*:root[data-colour-background|="cyan"] {
+    background-color: #31b9db;
+}
+
+*:root[data-colour-background|="blue"] {
+    background-color: #7476fc;
+}
+
+*:root[data-colour-background|="purple"] {
+    background-color: #c258f2;
+}
+
+*:root[data-colour-background|="magenta"] {
+    background-color: #e63ca4;
+}
+
+*:root[data-colour-background|="red"] {
+    background-color: #e83f2c;
+}
+
+*:root[data-colour-background|="yellow"] {
+    background-color: #f6d037;
+}
+
+*:root[data-colour-background|="green"] {
+    background-color: #6ad622;
+}
+
+*:root[data-colour-background|="teal"] {
+    background-color: #49cfa2;
+}
+
+*:root[data-colour-background|="white"] {
+    background-color: #f5f5f5;
+}
+
+*:root[data-colour-background|="bright"] {
+    background-color: #cccccc;
+}
+
+*:root[data-colour-background|="light"] {
+    background-color: #a3a3a3;
+}
+
+*:root[data-colour-background|="medium"] {
+    background-color: #828282;
+}
+
+*:root[data-colour-background|="regular"] {
+    background-color: #636363;
+}
+
+*:root[data-colour-background|="dark"] {
+    background-color: #3b3b3b;
+}
+
+*:root[data-colour-background|="dim"] {
+    background-color: #1c1c1c;
+}
+
+*:root[data-colour-background|="black"] {
+    background-color: #0c0c0c;
+}
+
+*:root[data-colour-background|="inherit"] {
+    background-color: inherit;
+}
+
+*:root[data-colour-background|="transparent"] {
+    background-color: transparent;
+}
+
+/*  SELECTION COLOURS  */
+
+*:root[data-colour-background|="cyan-light"] *::selection {
+    color: #bfe7f2;
+}
+
+*:root[data-colour-background|="blue-light"] *::selection {
+    color: #d0d1f6;
+}
+
+*:root[data-colour-background|="purple-light"] *::selection {
+    color: #eabdff;
+}
+
+*:root[data-colour-background|="magenta-light"] *::selection {
+    color: #f0b2d8;
+}
+
+*:root[data-colour-background|="red-light"] *::selection {
+    color: #f9a59b;
+}
+
+*:root[data-colour-background|="yellow-light"] *::selection {
+    color: #fcf0be;
+}
+
+*:root[data-colour-background|="green-light"] *::selection {
+    color: #d5fcbb;
+}
+
+*:root[data-colour-background|="teal-light"] *::selection {
+    color: #bdf0df;
+}
+
+*:root[data-colour-background|="cyan-dark"] *::selection {
+    color: #00495c;
+}
+
+*:root[data-colour-background|="blue-dark"] *::selection {
+    color: #383966;
+}
+
+*:root[data-colour-background|="purple-dark"] *::selection {
+    color: #4c3159;
+}
+
+*:root[data-colour-background|="magenta-dark"] *::selection {
+    color: #592846;
+}
+
+*:root[data-colour-background|="red-dark"] *::selection {
+    color: #5d2721;
+}
+
+*:root[data-colour-background|="yellow-dark"] *::selection {
+    color: #4f420d;
+}
+
+*:root[data-colour-background|="green-dark"] *::selection {
+    color: #1f4505;
+}
+
+*:root[data-colour-background|="teal-dark"] *::selection {
+    color: #1c4b3b;
+}
+
+*:root[data-colour-background|="cyan"] *::selection {
+    color: #31b9db;
+}
+
+*:root[data-colour-background|="blue"] *::selection {
+    color: #7476fc;
+}
+
+*:root[data-colour-background|="purple"] *::selection {
+    color: #c258f2;
+}
+
+*:root[data-colour-background|="magenta"] *::selection {
+    color: #e63ca4;
+}
+
+*:root[data-colour-background|="red"] *::selection {
+    color: #e83f2c;
+}
+
+*:root[data-colour-background|="yellow"] *::selection {
+    color: #f6d037;
+}
+
+*:root[data-colour-background|="green"] *::selection {
+    color: #6ad622;
+}
+
+*:root[data-colour-background|="teal"] *::selection {
+    color: #49cfa2;
+}
+
+*:root[data-colour-background|="white"] *::selection {
+    color: #f5f5f5;
+}
+
+*:root[data-colour-background|="bright"] *::selection {
+    color: #cccccc;
+}
+
+*:root[data-colour-background|="light"] *::selection {
+    color: #a3a3a3;
+}
+
+*:root[data-colour-background|="medium"] *::selection {
+    color: #828282;
+}
+
+*:root[data-colour-background|="regular"] *::selection {
+    color: #636363;
+}
+
+*:root[data-colour-background|="dark"] *::selection {
+    color: #3b3b3b;
+}
+
+*:root[data-colour-background|="dim"] *::selection {
+    color: #1c1c1c;
+}
+
+*:root[data-colour-background|="black"] *::selection {
+    color: #0c0c0c;
+}
+
+*:root[data-colour-background|="inherit"] *::selection {
+    color: inherit;
+}
+
+*:root[data-colour-background|="transparent"] *::selection {
+    color: transparent;
+}
+
+*[data-colour|="cyan-light"]::selection {
+    background-color: #bfe7f2;
+}
+
+*[data-colour|="blue-light"]::selection {
+    background-color: #d0d1f6;
+}
+
+*[data-colour|="purple-light"]::selection {
+    background-color: #eabdff;
+}
+
+*[data-colour|="magenta-light"]::selection {
+    background-color: #f0b2d8;
+}
+
+*[data-colour|="red-light"]::selection {
+    background-color: #f9a59b;
+}
+
+*[data-colour|="yellow-light"]::selection {
+    background-color: #fcf0be;
+}
+
+*[data-colour|="green-light"]::selection {
+    background-color: #d5fcbb;
+}
+
+*[data-colour|="teal-light"]::selection {
+    background-color: #bdf0df;
+}
+
+*[data-colour|="cyan-dark"]::selection {
+    background-color: #00495c;
+}
+
+*[data-colour|="blue-dark"]::selection {
+    background-color: #383966;
+}
+
+*[data-colour|="purple-dark"]::selection {
+    background-color: #4c3159;
+}
+
+*[data-colour|="magenta-dark"]::selection {
+    background-color: #592846;
+}
+
+*[data-colour|="red-dark"]::selection {
+    background-color: #5d2721;
+}
+
+*[data-colour|="yellow-dark"]::selection {
+    background-color: #4f420d;
+}
+
+*[data-colour|="green-dark"]::selection {
+    background-color: #1f4505;
+}
+
+*[data-colour|="teal-dark"]::selection {
+    background-color: #1c4b3b;
+}
+
+*[data-colour|="cyan"]::selection {
+    background-color: #31b9db;
+}
+
+*[data-colour|="blue"]::selection {
+    background-color: #7476fc;
+}
+
+*[data-colour|="purple"]::selection {
+    background-color: #c258f2;
+}
+
+*[data-colour|="magenta"]::selection {
+    background-color: #e63ca4;
+}
+
+*[data-colour|="red"]::selection {
+    background-color: #e83f2c;
+}
+
+*[data-colour|="yellow"]::selection {
+    background-color: #f6d037;
+}
+
+*[data-colour|="green"]::selection {
+    background-color: #6ad622;
+}
+
+*[data-colour|="teal"]::selection {
+    background-color: #49cfa2;
+}
+
+*[data-colour|="white"]::selection {
+    background-color: #f5f5f5;
+}
+
+*[data-colour|="bright"]::selection {
+    background-color: #cccccc;
+}
+
+*[data-colour|="light"]::selection {
+    background-color: #a3a3a3;
+}
+
+*[data-colour|="medium"]::selection {
+    background-color: #828282;
+}
+
+*[data-colour|="regular"]::selection {
+    background-color: #636363;
+}
+
+*[data-colour|="dark"]::selection {
+    background-color: #3b3b3b;
+}
+
+*[data-colour|="dim"]::selection {
+    background-color: #1c1c1c;
+}
+
+*[data-colour|="black"]::selection {
+    background-color: #0c0c0c;
+}
+
+*[data-colour|="transparent"]::selection {
+    background-color: transparent;
+}
+
+*[data-colour|="inherit"]::selection {
+    background-color: inherit;
+}
+
+/*  -MOZ-SELECTION COLOURS  */
+
+*:root[data-colour-background|="cyan-light"] *::-moz-selection {
+    color: #bfe7f2;
+}
+
+*:root[data-colour-background|="blue-light"] *::-moz-selection {
+    color: #d0d1f6;
+}
+
+*:root[data-colour-background|="purple-light"] *::-moz-selection {
+    color: #eabdff;
+}
+
+*:root[data-colour-background|="magenta-light"] *::-moz-selection {
+    color: #f0b2d8;
+}
+
+*:root[data-colour-background|="red-light"] *::-moz-selection {
+    color: #f9a59b;
+}
+
+*:root[data-colour-background|="yellow-light"] *::-moz-selection {
+    color: #fcf0be;
+}
+
+*:root[data-colour-background|="green-light"] *::-moz-selection {
+    color: #d5fcbb;
+}
+
+*:root[data-colour-background|="teal-light"] *::-moz-selection {
+    color: #bdf0df;
+}
+
+*:root[data-colour-background|="cyan-dark"] *::-moz-selection {
+    color: #00495c;
+}
+
+*:root[data-colour-background|="blue-dark"] *::-moz-selection {
+    color: #383966;
+}
+
+*:root[data-colour-background|="purple-dark"] *::-moz-selection {
+    color: #4c3159;
+}
+
+*:root[data-colour-background|="magenta-dark"] *::-moz-selection {
+    color: #592846;
+}
+
+*:root[data-colour-background|="red-dark"] *::-moz-selection {
+    color: #5d2721;
+}
+
+*:root[data-colour-background|="yellow-dark"] *::-moz-selection {
+    color: #4f420d;
+}
+
+*:root[data-colour-background|="green-dark"] *::-moz-selection {
+    color: #1f4505;
+}
+
+*:root[data-colour-background|="teal-dark"] *::-moz-selection {
+    color: #1c4b3b;
+}
+
+*:root[data-colour-background|="cyan"] *::-moz-selection {
+    color: #31b9db;
+}
+
+*:root[data-colour-background|="blue"] *::-moz-selection {
+    color: #7476fc;
+}
+
+*:root[data-colour-background|="purple"] *::-moz-selection {
+    color: #c258f2;
+}
+
+*:root[data-colour-background|="magenta"] *::-moz-selection {
+    color: #e63ca4;
+}
+
+*:root[data-colour-background|="red"] *::-moz-selection {
+    color: #e83f2c;
+}
+
+*:root[data-colour-background|="yellow"] *::-moz-selection {
+    color: #f6d037;
+}
+
+*:root[data-colour-background|="green"] *::-moz-selection {
+    color: #6ad622;
+}
+
+*:root[data-colour-background|="teal"] *::-moz-selection {
+    color: #49cfa2;
+}
+
+*:root[data-colour-background|="white"] *::-moz-selection {
+    color: #f5f5f5;
+}
+
+*:root[data-colour-background|="bright"] *::-moz-selection {
+    color: #cccccc;
+}
+
+*:root[data-colour-background|="light"] *::-moz-selection {
+    color: #a3a3a3;
+}
+
+*:root[data-colour-background|="medium"] *::-moz-selection {
+    color: #828282;
+}
+
+*:root[data-colour-background|="regular"] *::-moz-selection {
+    color: #636363;
+}
+
+*:root[data-colour-background|="dark"] *::-moz-selection {
+    color: #3b3b3b;
+}
+
+*:root[data-colour-background|="dim"] *::-moz-selection {
+    color: #1c1c1c;
+}
+
+*:root[data-colour-background|="black"] *::-moz-selection {
+    color: #0c0c0c;
+}
+
+*:root[data-colour-background|="inherit"] *::-moz-selection {
+    color: inherit;
+}
+
+*:root[data-colour-background|="transparent"] *::-moz-selection {
+    color: transparent;
+}
+
+*[data-colour|="cyan-light"]::-moz-selection {
+    background-color: #bfe7f2;
+}
+
+*[data-colour|="blue-light"]::-moz-selection {
+    background-color: #d0d1f6;
+}
+
+*[data-colour|="purple-light"]::-moz-selection {
+    background-color: #eabdff;
+}
+
+*[data-colour|="magenta-light"]::-moz-selection {
+    background-color: #f0b2d8;
+}
+
+*[data-colour|="red-light"]::-moz-selection {
+    background-color: #f9a59b;
+}
+
+*[data-colour|="yellow-light"]::-moz-selection {
+    background-color: #fcf0be;
+}
+
+*[data-colour|="green-light"]::-moz-selection {
+    background-color: #d5fcbb;
+}
+
+*[data-colour|="teal-light"]::-moz-selection {
+    background-color: #bdf0df;
+}
+
+*[data-colour|="cyan-dark"]::-moz-selection {
+    background-color: #00495c;
+}
+
+*[data-colour|="blue-dark"]::-moz-selection {
+    background-color: #383966;
+}
+
+*[data-colour|="purple-dark"]::-moz-selection {
+    background-color: #4c3159;
+}
+
+*[data-colour|="magenta-dark"]::-moz-selection {
+    background-color: #592846;
+}
+
+*[data-colour|="red-dark"]::-moz-selection {
+    background-color: #5d2721;
+}
+
+*[data-colour|="yellow-dark"]::-moz-selection {
+    background-color: #4f420d;
+}
+
+*[data-colour|="green-dark"]::-moz-selection {
+    background-color: #1f4505;
+}
+
+*[data-colour|="teal-dark"]::-moz-selection {
+    background-color: #1c4b3b;
+}
+
+*[data-colour|="cyan"]::-moz-selection {
+    background-color: #31b9db;
+}
+
+*[data-colour|="blue"]::-moz-selection {
+    background-color: #7476fc;
+}
+
+*[data-colour|="purple"]::-moz-selection {
+    background-color: #c258f2;
+}
+
+*[data-colour|="magenta"]::-moz-selection {
+    background-color: #e63ca4;
+}
+
+*[data-colour|="red"]::-moz-selection {
+    background-color: #e83f2c;
+}
+
+*[data-colour|="yellow"]::-moz-selection {
+    background-color: #f6d037;
+}
+
+*[data-colour|="green"]::-moz-selection {
+    background-color: #6ad622;
+}
+
+*[data-colour|="teal"]::-moz-selection {
+    background-color: #49cfa2;
+}
+
+*[data-colour|="white"]::-moz-selection {
+    background-color: #f5f5f5;
+}
+
+*[data-colour|="bright"]::-moz-selection {
+    background-color: #cccccc;
+}
+
+*[data-colour|="light"]::-moz-selection {
+    background-color: #a3a3a3;
+}
+
+*[data-colour|="medium"]::-moz-selection {
+    background-color: #828282;
+}
+
+*[data-colour|="regular"]::-moz-selection {
+    background-color: #636363;
+}
+
+*[data-colour|="dark"]::-moz-selection {
+    background-color: #3b3b3b;
+}
+
+*[data-colour|="dim"]::-moz-selection {
+    background-color: #1c1c1c;
+}
+
+*[data-colour|="black"]::-moz-selection {
+    background-color: #0c0c0c;
+}
+
+*[data-colour|="transparent"]::-moz-selection {
+    background-color: transparent;
+}
+
+*[data-colour|="inherit"]::-moz-selection {
+    background-color: inherit;
 }
