@@ -17,275 +17,275 @@ a[href], *.colour-link, *[data-colour-transition] {
 
 /*  BASIC COLOURING  */
 
-*:root *[data-colour|="cyan-light"] {
+*:root *:not(:root)[data-colour|="cyan-light"] {
     color: #bfe7f2;
 }
 
-*:root *[data-colour|="blue-light"] {
+*:root *:not(:root)[data-colour|="blue-light"] {
     color: #d0d1f6;
 }
 
-*:root *[data-colour|="purple-light"] {
+*:root *:not(:root)[data-colour|="purple-light"] {
     color: #eabdff;
 }
 
-*:root *[data-colour|="magenta-light"] {
+*:root *:not(:root)[data-colour|="magenta-light"] {
     color: #f0b2d8;
 }
 
-*:root *[data-colour|="red-light"] {
+*:root *:not(:root)[data-colour|="red-light"] {
     color: #f9a59b;
 }
 
-*:root *[data-colour|="yellow-light"] {
+*:root *:not(:root)[data-colour|="yellow-light"] {
     color: #fcf0be;
 }
 
-*:root *[data-colour|="green-light"] {
+*:root *:not(:root)[data-colour|="green-light"] {
     color: #d5fcbb;
 }
 
-*:root *[data-colour|="teal-light"] {
+*:root *:not(:root)[data-colour|="teal-light"] {
     color: #bdf0df;
 }
 
-*:root *[data-colour|="cyan-dark"] {
+*:root *:not(:root)[data-colour|="cyan-dark"] {
     color: #00495c;
 }
 
-*:root *[data-colour|="blue-dark"] {
+*:root *:not(:root)[data-colour|="blue-dark"] {
     color: #383966;
 }
 
-*:root *[data-colour|="purple-dark"] {
+*:root *:not(:root)[data-colour|="purple-dark"] {
     color: #4c3159;
 }
 
-*:root *[data-colour|="magenta-dark"] {
+*:root *:not(:root)[data-colour|="magenta-dark"] {
     color: #592846;
 }
 
-*:root *[data-colour|="red-dark"] {
+*:root *:not(:root)[data-colour|="red-dark"] {
     color: #5d2721;
 }
 
-*:root *[data-colour|="yellow-dark"] {
+*:root *:not(:root)[data-colour|="yellow-dark"] {
     color: #4f420d;
 }
 
-*:root *[data-colour|="green-dark"] {
+*:root *:not(:root)[data-colour|="green-dark"] {
     color: #1f4505;
 }
 
-*:root *[data-colour|="teal-dark"] {
+*:root *:not(:root)[data-colour|="teal-dark"] {
     color: #1c4b3b;
 }
 
-*:root *[data-colour|="cyan"] {
+*:root *:not(:root)[data-colour|="cyan"] {
     color: #31b9db;
 }
 
-*:root *[data-colour|="blue"] {
+*:root *:not(:root)[data-colour|="blue"] {
     color: #7476fc;
 }
 
-*:root *[data-colour|="purple"] {
+*:root *:not(:root)[data-colour|="purple"] {
     color: #c258f2;
 }
 
-*:root *[data-colour|="magenta"] {
+*:root *:not(:root)[data-colour|="magenta"] {
     color: #e63ca4;
 }
 
-*:root *[data-colour|="red"] {
+*:root *:not(:root)[data-colour|="red"] {
     color: #e83f2c;
 }
 
-*:root *[data-colour|="yellow"] {
+*:root *:not(:root)[data-colour|="yellow"] {
     color: #f6d037;
 }
 
-*:root *[data-colour|="green"] {
+*:root *:not(:root)[data-colour|="green"] {
     color: #6ad622;
 }
 
-*:root *[data-colour|="teal"] {
+*:root *:not(:root)[data-colour|="teal"] {
     color: #49cfa2;
 }
 
-*:root *[data-colour|="white"] {
+*:root *:not(:root)[data-colour|="white"] {
     color: #f5f5f5;
 }
 
-*:root *[data-colour|="bright"] {
+*:root *:not(:root)[data-colour|="bright"] {
     color: #cccccc;
 }
 
-*:root *[data-colour|="light"] {
+*:root *:not(:root)[data-colour|="light"] {
     color: #a3a3a3;
 }
 
-*:root *[data-colour|="medium"] {
+*:root *:not(:root)[data-colour|="medium"] {
     color: #828282;
 }
 
-*:root *[data-colour|="regular"] {
+*:root *:not(:root)[data-colour|="regular"] {
     color: #636363;
 }
 
-*:root *[data-colour|="dark"] {
+*:root *:not(:root)[data-colour|="dark"] {
     color: #3b3b3b;
 }
 
-*:root *[data-colour|="dim"] {
+*:root *:not(:root)[data-colour|="dim"] {
     color: #1c1c1c;
 }
 
-*:root *[data-colour|="black"] {
+*:root *:not(:root)[data-colour|="black"] {
     color: #0c0c0c;
 }
 
-*:root *[data-colour|="transparent"] {
+*:root *:not(:root)[data-colour|="transparent"] {
     color: transparent;
 }
 
-*:root *[data-colour|="inherit"] {
+*:root *:not(:root)[data-colour|="inherit"] {
     color: inherit;
 }
 
-*:root *[data-colour-background|="cyan-light"] {
+*:root *:not(:root)[data-colour-background|="cyan-light"] {
     background-color: #bfe7f2;
 }
 
-*:root *[data-colour-background|="blue-light"] {
+*:root *:not(:root)[data-colour-background|="blue-light"] {
     background-color: #d0d1f6;
 }
 
-*:root *[data-colour-background|="purple-light"] {
+*:root *:not(:root)[data-colour-background|="purple-light"] {
     background-color: #eabdff;
 }
 
-*:root *[data-colour-background|="magenta-light"] {
+*:root *:not(:root)[data-colour-background|="magenta-light"] {
     background-color: #f0b2d8;
 }
 
-*:root *[data-colour-background|="red-light"] {
+*:root *:not(:root)[data-colour-background|="red-light"] {
     background-color: #f9a59b;
 }
 
-*:root *[data-colour-background|="yellow-light"] {
+*:root *:not(:root)[data-colour-background|="yellow-light"] {
     background-color: #fcf0be;
 }
 
-*:root *[data-colour-background|="green-light"] {
+*:root *:not(:root)[data-colour-background|="green-light"] {
     background-color: #d5fcbb;
 }
 
-*:root *[data-colour-background|="teal-light"] {
+*:root *:not(:root)[data-colour-background|="teal-light"] {
     background-color: #bdf0df;
 }
 
-*:root *[data-colour-background|="cyan-dark"] {
+*:root *:not(:root)[data-colour-background|="cyan-dark"] {
     background-color: #00495c;
 }
 
-*:root *[data-colour-background|="blue-dark"] {
+*:root *:not(:root)[data-colour-background|="blue-dark"] {
     background-color: #383966;
 }
 
-*:root *[data-colour-background|="purple-dark"] {
+*:root *:not(:root)[data-colour-background|="purple-dark"] {
     background-color: #4c3159;
 }
 
-*:root *[data-colour-background|="magenta-dark"] {
+*:root *:not(:root)[data-colour-background|="magenta-dark"] {
     background-color: #592846;
 }
 
-*:root *[data-colour-background|="red-dark"] {
+*:root *:not(:root)[data-colour-background|="red-dark"] {
     background-color: #5d2721;
 }
 
-*:root *[data-colour-background|="yellow-dark"] {
+*:root *:not(:root)[data-colour-background|="yellow-dark"] {
     background-color: #4f420d;
 }
 
-*:root *[data-colour-background|="green-dark"] {
+*:root *:not(:root)[data-colour-background|="green-dark"] {
     background-color: #1f4505;
 }
 
-*:root *[data-colour-background|="teal-dark"] {
+*:root *:not(:root)[data-colour-background|="teal-dark"] {
     background-color: #1c4b3b;
 }
 
-*:root *[data-colour-background|="cyan"] {
+*:root *:not(:root)[data-colour-background|="cyan"] {
     background-color: #31b9db;
 }
 
-*:root *[data-colour-background|="blue"] {
+*:root *:not(:root)[data-colour-background|="blue"] {
     background-color: #7476fc;
 }
 
-*:root *[data-colour-background|="purple"] {
+*:root *:not(:root)[data-colour-background|="purple"] {
     background-color: #c258f2;
 }
 
-*:root *[data-colour-background|="magenta"] {
+*:root *:not(:root)[data-colour-background|="magenta"] {
     background-color: #e63ca4;
 }
 
-*:root *[data-colour-background|="red"] {
+*:root *:not(:root)[data-colour-background|="red"] {
     background-color: #e83f2c;
 }
 
-*:root *[data-colour-background|="yellow"] {
+*:root *:not(:root)[data-colour-background|="yellow"] {
     background-color: #f6d037;
 }
 
-*:root *[data-colour-background|="green"] {
+*:root *:not(:root)[data-colour-background|="green"] {
     background-color: #6ad622;
 }
 
-*:root *[data-colour-background|="teal"] {
+*:root *:not(:root)[data-colour-background|="teal"] {
     background-color: #49cfa2;
 }
 
-*:root *[data-colour-background|="white"] {
+*:root *:not(:root)[data-colour-background|="white"] {
     background-color: #f5f5f5;
 }
 
-*:root *[data-colour-background|="bright"] {
+*:root *:not(:root)[data-colour-background|="bright"] {
     background-color: #cccccc;
 }
 
-*:root *[data-colour-background|="light"] {
+*:root *:not(:root)[data-colour-background|="light"] {
     background-color: #a3a3a3;
 }
 
-*:root *[data-colour-background|="medium"] {
+*:root *:not(:root)[data-colour-background|="medium"] {
     background-color: #828282;
 }
 
-*:root *[data-colour-background|="regular"] {
+*:root *:not(:root)[data-colour-background|="regular"] {
     background-color: #636363;
 }
 
-*:root *[data-colour-background|="dark"] {
+*:root *:not(:root)[data-colour-background|="dark"] {
     background-color: #3b3b3b;
 }
 
-*:root *[data-colour-background|="dim"] {
+*:root *:not(:root)[data-colour-background|="dim"] {
     background-color: #1c1c1c;
 }
 
-*:root *[data-colour-background|="black"] {
+*:root *:not(:root)[data-colour-background|="black"] {
     background-color: #0c0c0c;
 }
 
-*:root *[data-colour-background|="transparent"] {
+*:root *:not(:root)[data-colour-background|="transparent"] {
     background-color: transparent;
 }
 
-*:root *[data-colour-background|="inherit"] {
+*:root *:not(:root)[data-colour-background|="inherit"] {
     background-color: inherit;
 }
 
@@ -1084,139 +1084,139 @@ a[href], *.colour-link, *[data-colour-transition] {
     color: transparent;
 }
 
-*:root *[data-colour|="cyan-light"]::selection {
+*:root *:not(:root)[data-colour|="cyan-light"]::selection {
     background-color: #bfe7f2;
 }
 
-*:root *[data-colour|="blue-light"]::selection {
+*:root *:not(:root)[data-colour|="blue-light"]::selection {
     background-color: #d0d1f6;
 }
 
-*:root *[data-colour|="purple-light"]::selection {
+*:root *:not(:root)[data-colour|="purple-light"]::selection {
     background-color: #eabdff;
 }
 
-*:root *[data-colour|="magenta-light"]::selection {
+*:root *:not(:root)[data-colour|="magenta-light"]::selection {
     background-color: #f0b2d8;
 }
 
-*:root *[data-colour|="red-light"]::selection {
+*:root *:not(:root)[data-colour|="red-light"]::selection {
     background-color: #f9a59b;
 }
 
-*:root *[data-colour|="yellow-light"]::selection {
+*:root *:not(:root)[data-colour|="yellow-light"]::selection {
     background-color: #fcf0be;
 }
 
-*:root *[data-colour|="green-light"]::selection {
+*:root *:not(:root)[data-colour|="green-light"]::selection {
     background-color: #d5fcbb;
 }
 
-*:root *[data-colour|="teal-light"]::selection {
+*:root *:not(:root)[data-colour|="teal-light"]::selection {
     background-color: #bdf0df;
 }
 
-*:root *[data-colour|="cyan-dark"]::selection {
+*:root *:not(:root)[data-colour|="cyan-dark"]::selection {
     background-color: #00495c;
 }
 
-*:root *[data-colour|="blue-dark"]::selection {
+*:root *:not(:root)[data-colour|="blue-dark"]::selection {
     background-color: #383966;
 }
 
-*:root *[data-colour|="purple-dark"]::selection {
+*:root *:not(:root)[data-colour|="purple-dark"]::selection {
     background-color: #4c3159;
 }
 
-*:root *[data-colour|="magenta-dark"]::selection {
+*:root *:not(:root)[data-colour|="magenta-dark"]::selection {
     background-color: #592846;
 }
 
-*:root *[data-colour|="red-dark"]::selection {
+*:root *:not(:root)[data-colour|="red-dark"]::selection {
     background-color: #5d2721;
 }
 
-*:root *[data-colour|="yellow-dark"]::selection {
+*:root *:not(:root)[data-colour|="yellow-dark"]::selection {
     background-color: #4f420d;
 }
 
-*:root *[data-colour|="green-dark"]::selection {
+*:root *:not(:root)[data-colour|="green-dark"]::selection {
     background-color: #1f4505;
 }
 
-*:root *[data-colour|="teal-dark"]::selection {
+*:root *:not(:root)[data-colour|="teal-dark"]::selection {
     background-color: #1c4b3b;
 }
 
-*:root *[data-colour|="cyan"]::selection {
+*:root *:not(:root)[data-colour|="cyan"]::selection {
     background-color: #31b9db;
 }
 
-*:root *[data-colour|="blue"]::selection {
+*:root *:not(:root)[data-colour|="blue"]::selection {
     background-color: #7476fc;
 }
 
-*:root *[data-colour|="purple"]::selection {
+*:root *:not(:root)[data-colour|="purple"]::selection {
     background-color: #c258f2;
 }
 
-*:root *[data-colour|="magenta"]::selection {
+*:root *:not(:root)[data-colour|="magenta"]::selection {
     background-color: #e63ca4;
 }
 
-*:root *[data-colour|="red"]::selection {
+*:root *:not(:root)[data-colour|="red"]::selection {
     background-color: #e83f2c;
 }
 
-*:root *[data-colour|="yellow"]::selection {
+*:root *:not(:root)[data-colour|="yellow"]::selection {
     background-color: #f6d037;
 }
 
-*:root *[data-colour|="green"]::selection {
+*:root *:not(:root)[data-colour|="green"]::selection {
     background-color: #6ad622;
 }
 
-*:root *[data-colour|="teal"]::selection {
+*:root *:not(:root)[data-colour|="teal"]::selection {
     background-color: #49cfa2;
 }
 
-*:root *[data-colour|="white"]::selection {
+*:root *:not(:root)[data-colour|="white"]::selection {
     background-color: #f5f5f5;
 }
 
-*:root *[data-colour|="bright"]::selection {
+*:root *:not(:root)[data-colour|="bright"]::selection {
     background-color: #cccccc;
 }
 
-*:root *[data-colour|="light"]::selection {
+*:root *:not(:root)[data-colour|="light"]::selection {
     background-color: #a3a3a3;
 }
 
-*:root *[data-colour|="medium"]::selection {
+*:root *:not(:root)[data-colour|="medium"]::selection {
     background-color: #828282;
 }
 
-*:root *[data-colour|="regular"]::selection {
+*:root *:not(:root)[data-colour|="regular"]::selection {
     background-color: #636363;
 }
 
-*:root *[data-colour|="dark"]::selection {
+*:root *:not(:root)[data-colour|="dark"]::selection {
     background-color: #3b3b3b;
 }
 
-*:root *[data-colour|="dim"]::selection {
+*:root *:not(:root)[data-colour|="dim"]::selection {
     background-color: #1c1c1c;
 }
 
-*:root *[data-colour|="black"]::selection {
+*:root *:not(:root)[data-colour|="black"]::selection {
     background-color: #0c0c0c;
 }
 
-*:root *[data-colour|="transparent"]::selection {
+*:root *:not(:root)[data-colour|="transparent"]::selection {
     background-color: transparent;
 }
 
-*:root *[data-colour|="inherit"]::selection {
+*:root *:not(:root)[data-colour|="inherit"]::selection {
     background-color: inherit;
 }
 
@@ -1358,138 +1358,138 @@ a[href], *.colour-link, *[data-colour-transition] {
     color: transparent;
 }
 
-*:root *[data-colour|="cyan-light"]::-moz-selection {
+*:root *:not(:root)[data-colour|="cyan-light"]::-moz-selection {
     background-color: #bfe7f2;
 }
 
-*:root *[data-colour|="blue-light"]::-moz-selection {
+*:root *:not(:root)[data-colour|="blue-light"]::-moz-selection {
     background-color: #d0d1f6;
 }
 
-*:root *[data-colour|="purple-light"]::-moz-selection {
+*:root *:not(:root)[data-colour|="purple-light"]::-moz-selection {
     background-color: #eabdff;
 }
 
-*:root *[data-colour|="magenta-light"]::-moz-selection {
+*:root *:not(:root)[data-colour|="magenta-light"]::-moz-selection {
     background-color: #f0b2d8;
 }
 
-*:root *[data-colour|="red-light"]::-moz-selection {
+*:root *:not(:root)[data-colour|="red-light"]::-moz-selection {
     background-color: #f9a59b;
 }
 
-*:root *[data-colour|="yellow-light"]::-moz-selection {
+*:root *:not(:root)[data-colour|="yellow-light"]::-moz-selection {
     background-color: #fcf0be;
 }
 
-*:root *[data-colour|="green-light"]::-moz-selection {
+*:root *:not(:root)[data-colour|="green-light"]::-moz-selection {
     background-color: #d5fcbb;
 }
 
-*:root *[data-colour|="teal-light"]::-moz-selection {
+*:root *:not(:root)[data-colour|="teal-light"]::-moz-selection {
     background-color: #bdf0df;
 }
 
-*:root *[data-colour|="cyan-dark"]::-moz-selection {
+*:root *:not(:root)[data-colour|="cyan-dark"]::-moz-selection {
     background-color: #00495c;
 }
 
-*:root *[data-colour|="blue-dark"]::-moz-selection {
+*:root *:not(:root)[data-colour|="blue-dark"]::-moz-selection {
     background-color: #383966;
 }
 
-*:root *[data-colour|="purple-dark"]::-moz-selection {
+*:root *:not(:root)[data-colour|="purple-dark"]::-moz-selection {
     background-color: #4c3159;
 }
 
-*:root *[data-colour|="magenta-dark"]::-moz-selection {
+*:root *:not(:root)[data-colour|="magenta-dark"]::-moz-selection {
     background-color: #592846;
 }
 
-*:root *[data-colour|="red-dark"]::-moz-selection {
+*:root *:not(:root)[data-colour|="red-dark"]::-moz-selection {
     background-color: #5d2721;
 }
 
-*:root *[data-colour|="yellow-dark"]::-moz-selection {
+*:root *:not(:root)[data-colour|="yellow-dark"]::-moz-selection {
     background-color: #4f420d;
 }
 
-*:root *[data-colour|="green-dark"]::-moz-selection {
+*:root *:not(:root)[data-colour|="green-dark"]::-moz-selection {
     background-color: #1f4505;
 }
 
-*:root *[data-colour|="teal-dark"]::-moz-selection {
+*:root *:not(:root)[data-colour|="teal-dark"]::-moz-selection {
     background-color: #1c4b3b;
 }
 
-*:root *[data-colour|="cyan"]::-moz-selection {
+*:root *:not(:root)[data-colour|="cyan"]::-moz-selection {
     background-color: #31b9db;
 }
 
-*:root *[data-colour|="blue"]::-moz-selection {
+*:root *:not(:root)[data-colour|="blue"]::-moz-selection {
     background-color: #7476fc;
 }
 
-*:root *[data-colour|="purple"]::-moz-selection {
+*:root *:not(:root)[data-colour|="purple"]::-moz-selection {
     background-color: #c258f2;
 }
 
-*:root *[data-colour|="magenta"]::-moz-selection {
+*:root *:not(:root)[data-colour|="magenta"]::-moz-selection {
     background-color: #e63ca4;
 }
 
-*:root *[data-colour|="red"]::-moz-selection {
+*:root *:not(:root)[data-colour|="red"]::-moz-selection {
     background-color: #e83f2c;
 }
 
-*:root *[data-colour|="yellow"]::-moz-selection {
+*:root *:not(:root)[data-colour|="yellow"]::-moz-selection {
     background-color: #f6d037;
 }
 
-*:root *[data-colour|="green"]::-moz-selection {
+*:root *:not(:root)[data-colour|="green"]::-moz-selection {
     background-color: #6ad622;
 }
 
-*:root *[data-colour|="teal"]::-moz-selection {
+*:root *:not(:root)[data-colour|="teal"]::-moz-selection {
     background-color: #49cfa2;
 }
 
-*:root *[data-colour|="white"]::-moz-selection {
+*:root *:not(:root)[data-colour|="white"]::-moz-selection {
     background-color: #f5f5f5;
 }
 
-*:root *[data-colour|="bright"]::-moz-selection {
+*:root *:not(:root)[data-colour|="bright"]::-moz-selection {
     background-color: #cccccc;
 }
 
-*:root *[data-colour|="light"]::-moz-selection {
+*:root *:not(:root)[data-colour|="light"]::-moz-selection {
     background-color: #a3a3a3;
 }
 
-*:root *[data-colour|="medium"]::-moz-selection {
+*:root *:not(:root)[data-colour|="medium"]::-moz-selection {
     background-color: #828282;
 }
 
-*:root *[data-colour|="regular"]::-moz-selection {
+*:root *:not(:root)[data-colour|="regular"]::-moz-selection {
     background-color: #636363;
 }
 
-*:root *[data-colour|="dark"]::-moz-selection {
+*:root *:not(:root)[data-colour|="dark"]::-moz-selection {
     background-color: #3b3b3b;
 }
 
-*:root *[data-colour|="dim"]::-moz-selection {
+*:root *:not(:root)[data-colour|="dim"]::-moz-selection {
     background-color: #1c1c1c;
 }
 
-*:root *[data-colour|="black"]::-moz-selection {
+*:root *:not(:root)[data-colour|="black"]::-moz-selection {
     background-color: #0c0c0c;
 }
 
-*:root *[data-colour|="transparent"]::-moz-selection {
+*:root *:not(:root)[data-colour|="transparent"]::-moz-selection {
     background-color: transparent;
 }
 
-*:root *[data-colour|="inherit"]::-moz-selection {
+*:root *:not(:root)[data-colour|="inherit"]::-moz-selection {
     background-color: inherit;
 }
