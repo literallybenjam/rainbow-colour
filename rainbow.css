@@ -1084,6 +1084,142 @@ a[href], *.colour-link, *[data-colour-transition] {
     color: transparent;
 }
 
+*:root[data-colour|="cyan"] *::selection {
+    background-color: #31b9db;
+}
+
+*:root[data-colour|="blue"] *::selection {
+    background-color: #7476fc;
+}
+
+*:root[data-colour|="purple"] *::selection {
+    background-color: #c258f2;
+}
+
+*:root[data-colour|="magenta"] *::selection {
+    background-color: #e63ca4;
+}
+
+*:root[data-colour|="red"] *::selection {
+    background-color: #e83f2c;
+}
+
+*:root[data-colour|="yellow"] *::selection {
+    background-color: #f6d037;
+}
+
+*:root[data-colour|="green"] *::selection {
+    background-color: #6ad622;
+}
+
+*:root[data-colour|="teal"] *::selection {
+    background-color: #49cfa2;
+}
+
+*:root[data-colour|="cyan-light"] *::selection {
+    background-color: #bfe7f2;
+}
+
+*:root[data-colour|="blue-light"] *::selection {
+    background-color: #d0d1f6;
+}
+
+*:root[data-colour|="purple-light"] *::selection {
+    background-color: #eabdff;
+}
+
+*:root[data-colour|="magenta-light"] *::selection {
+    background-color: #f0b2d8;
+}
+
+*:root[data-colour|="red-light"] *::selection {
+    background-color: #f9a59b;
+}
+
+*:root[data-colour|="yellow-light"] *::selection {
+    background-color: #fcf0be;
+}
+
+*:root[data-colour|="green-light"] *::selection {
+    background-color: #d5fcbb;
+}
+
+*:root[data-colour|="teal-light"] *::selection {
+    background-color: #bdf0df;
+}
+
+*:root[data-colour|="cyan-dark"] *::selection {
+    background-color: #00495c;
+}
+
+*:root[data-colour|="blue-dark"] *::selection {
+    background-color: #383966;
+}
+
+*:root[data-colour|="purple-dark"] *::selection {
+    background-color: #4c3159;
+}
+
+*:root[data-colour|="magenta-dark"] *::selection {
+    background-color: #592846;
+}
+
+*:root[data-colour|="red-dark"] *::selection {
+    background-color: #5d2721;
+}
+
+*:root[data-colour|="yellow-dark"] *::selection {
+    background-color: #4f420d;
+}
+
+*:root[data-colour|="green-dark"] *::selection {
+    background-color: #1f4505;
+}
+
+*:root[data-colour|="teal-dark"] *::selection {
+    background-color: #1c4b3b;
+}
+
+*:root[data-colour|="white"] *::selection {
+    background-color: #f5f5f5;
+}
+
+*:root[data-colour|="bright"] *::selection {
+    background-color: #cccccc;
+}
+
+*:root[data-colour|="light"] *::selection {
+    background-color: #a3a3a3;
+}
+
+*:root[data-colour|="medium"] *::selection {
+    background-color: #828282;
+}
+
+*:root[data-colour|="regular"] *::selection {
+    background-color: #636363;
+}
+
+*:root[data-colour|="dark"] *::selection {
+    background-color: #3b3b3b;
+}
+
+*:root[data-colour|="dim"] *::selection {
+    background-color: #1c1c1c;
+}
+
+*:root[data-colour|="black"] *::selection {
+    background-color: #0c0c0c;
+}
+
+*:root[data-colour|="inherit"] *::selection {
+    background-color: inherit;
+}
+
+*:root[data-colour|="transparent"] *::selection {
+    background-color: transparent;
+}
+
 *:root *:not(:root)[data-colour|="cyan"]::selection {
     background-color: #31b9db;
 }
@@ -1356,6 +1492,142 @@ a[href], *.colour-link, *[data-colour-transition] {
 
 *:root[data-colour-background|="transparent"] *::-moz-selection {
     color: transparent;
+}
+
+*:root[data-colour|="cyan"] *::-moz-selection {
+    background-color: #31b9db;
+}
+
+*:root[data-colour|="blue"] *::-moz-selection {
+    background-color: #7476fc;
+}
+
+*:root[data-colour|="purple"] *::-moz-selection {
+    background-color: #c258f2;
+}
+
+*:root[data-colour|="magenta"] *::-moz-selection {
+    background-color: #e63ca4;
+}
+
+*:root[data-colour|="red"] *::-moz-selection {
+    background-color: #e83f2c;
+}
+
+*:root[data-colour|="yellow"] *::-moz-selection {
+    background-color: #f6d037;
+}
+
+*:root[data-colour|="green"] *::-moz-selection {
+    background-color: #6ad622;
+}
+
+*:root[data-colour|="teal"] *::-moz-selection {
+    background-color: #49cfa2;
+}
+
+*:root[data-colour|="cyan-light"] *::-moz-selection {
+    background-color: #bfe7f2;
+}
+
+*:root[data-colour|="blue-light"] *::-moz-selection {
+    background-color: #d0d1f6;
+}
+
+*:root[data-colour|="purple-light"] *::-moz-selection {
+    background-color: #eabdff;
+}
+
+*:root[data-colour|="magenta-light"] *::-moz-selection {
+    background-color: #f0b2d8;
+}
+
+*:root[data-colour|="red-light"] *::-moz-selection {
+    background-color: #f9a59b;
+}
+
+*:root[data-colour|="yellow-light"] *::-moz-selection {
+    background-color: #fcf0be;
+}
+
+*:root[data-colour|="green-light"] *::-moz-selection {
+    background-color: #d5fcbb;
+}
+
+*:root[data-colour|="teal-light"] *::-moz-selection {
+    background-color: #bdf0df;
+}
+
+*:root[data-colour|="cyan-dark"] *::-moz-selection {
+    background-color: #00495c;
+}
+
+*:root[data-colour|="blue-dark"] *::-moz-selection {
+    background-color: #383966;
+}
+
+*:root[data-colour|="purple-dark"] *::-moz-selection {
+    background-color: #4c3159;
+}
+
+*:root[data-colour|="magenta-dark"] *::-moz-selection {
+    background-color: #592846;
+}
+
+*:root[data-colour|="red-dark"] *::-moz-selection {
+    background-color: #5d2721;
+}
+
+*:root[data-colour|="yellow-dark"] *::-moz-selection {
+    background-color: #4f420d;
+}
+
+*:root[data-colour|="green-dark"] *::-moz-selection {
+    background-color: #1f4505;
+}
+
+*:root[data-colour|="teal-dark"] *::-moz-selection {
+    background-color: #1c4b3b;
+}
+
+*:root[data-colour|="white"] *::-moz-selection {
+    background-color: #f5f5f5;
+}
+
+*:root[data-colour|="bright"] *::-moz-selection {
+    background-color: #cccccc;
+}
+
+*:root[data-colour|="light"] *::-moz-selection {
+    background-color: #a3a3a3;
+}
+
+*:root[data-colour|="medium"] *::-moz-selection {
+    background-color: #828282;
+}
+
+*:root[data-colour|="regular"] *::-moz-selection {
+    background-color: #636363;
+}
+
+*:root[data-colour|="dark"] *::-moz-selection {
+    background-color: #3b3b3b;
+}
+
+*:root[data-colour|="dim"] *::-moz-selection {
+    background-color: #1c1c1c;
+}
+
+*:root[data-colour|="black"] *::-moz-selection {
+    background-color: #0c0c0c;
+}
+
+*:root[data-colour|="inherit"] *::-moz-selection {
+    background-color: inherit;
+}
+
+*:root[data-colour|="transparent"] *::-moz-selection {
+    background-color: transparent;
 }
 
 *:root *:not(:root)[data-colour|="cyan"]::-moz-selection {
