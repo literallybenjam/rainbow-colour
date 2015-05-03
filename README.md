@@ -28,7 +28,7 @@ There are eight colours available for use in RAINBOW:
 
 `cyan` `blue` `purple` `magenta` `red` `yellow` `green` `teal`
 
-Each colour-value may be suffexed with `-light` or `-dark` to lighten or darken the colour.
+Each colour may be suffexed with `-light` or `-dark` to lighten or darken it.
 Other suffixes will not affect the colour.
 
 There are also eight greys in RAINBOW:
