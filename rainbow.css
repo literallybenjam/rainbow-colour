@@ -508,7 +508,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 *:root[data-colour|="bright"] b, *:root[data-colour|="bright"] cite, *:root[data-colour|="bright"] em, *:root[data-colour|="bright"] i, *:root[data-colour|="bright"] time, *:root[data-colour|="bright"] u, *:root[data-colour|="bright"] *.colour-emphasis,
 *:root[data-colour|="bright"] *.colour-heading,
 *:root[data-colour|="bright"] a[href], *:root[data-colour|="bright"] *.colour-link,
-*:root[data-colour|="bright"] *.colour-strong {
+*:root[data-colour|="bright"] strong, *:root[data-colour|="bright"] *.colour-strong {
     color: #f5f5f5;
 }
 
@@ -526,7 +526,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 }
 
 *:root[data-colour|="light"] code, *:root[data-colour|="light"] pre, *:root[data-colour|="light"] *.colour-code,
-*:root[data-colour|="light"] *.colour-strong {
+*:root[data-colour|="light"] strong, *:root[data-colour|="light"] *.colour-strong {
     color: #f5f5f5;
 }
 
@@ -554,7 +554,7 @@ a[href], *.colour-link, *[data-colour-transition] {
     color: #f5f5f5;
 }
 
-*:root[data-colour|="medium"] *.colour-strong {
+*:root[data-colour|="medium"] strong, *:root[data-colour|="medium"] *.colour-strong {
     color: #cccccc;
 }
 
@@ -582,7 +582,7 @@ a[href], *.colour-link, *[data-colour-transition] {
     color: #0c0c0c;
 }
 
-*:root[data-colour|="regular"] *.colour-strong {
+*:root[data-colour|="regular"] strong, *:root[data-colour|="regular"] *.colour-strong {
     color: #1c1c1c;
 }
 
@@ -607,7 +607,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 }
 
 *:root[data-colour|="dark"] code, *:root[data-colour|="dark"] pre, *:root[data-colour|="dark"] *.colour-code,
-*:root[data-colour|="dark"] *.colour-strong {
+*:root[data-colour|="dark"] strong, *:root[data-colour|="dark"] *.colour-strong {
     color: #0c0c0c;
 }
 
@@ -636,7 +636,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 *:root[data-colour|="dim"] b, *:root[data-colour|="dim"] cite, *:root[data-colour|="dim"] em, *:root[data-colour|="dim"] i, *:root[data-colour|="dim"] time, *:root[data-colour|="dim"] u, *:root[data-colour|="dim"] *.colour-emphasis,
 *:root[data-colour|="dim"] *.colour-heading,
 *:root[data-colour|="dim"] a[href], *:root[data-colour|="dim"] *.colour-link,
-*:root[data-colour|="dim"] *.colour-strong {
+*:root[data-colour|="dim"] strong, *:root[data-colour|="dim"] *.colour-strong {
     color: #0c0c0c;
 }
 
