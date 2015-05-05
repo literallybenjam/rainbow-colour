@@ -7,7 +7,7 @@ A CSS colour palette providing a rainbow of colours
 To use the colours provided in RAINBOW, set the `data-colour` or the `data-colour-background` attribute on an element to one or more colour-values (explained below).
 
 Setting these attributes on the root element of the page may have a special effect on descendant elements in order to create a clearer and more cohesive style; as such, specifying a `data-colour` and a `data-colour-background` for the root element is highly recommended.
-You can use the `data-colour-accent` attribute to set the accent colour of a page; this only has an effect when used on the root element.
+You can use the `data-colour-accent` attribute to set the accent colour of a page; this only has an effect when used on the root element. **This is not yet supported, but coming soon!**
 
 ```html
 <!DOCTYPE html>
