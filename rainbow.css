@@ -506,7 +506,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 *:root[data-colour|="bright"] *.colour-accent,
 *:root[data-colour|="bright"] code, *:root[data-colour|="bright"] pre, *:root[data-colour|="bright"] *.colour-code,
 *:root[data-colour|="bright"] b, *:root[data-colour|="bright"] cite, *:root[data-colour|="bright"] em, *:root[data-colour|="bright"] i, *:root[data-colour|="bright"] time, *:root[data-colour|="bright"] u, *:root[data-colour|="bright"] *.colour-emphasis,
-*:root[data-colour|="bright"] *.colour-heading,
+*:root[data-colour|="bright"] caption, *:root[data-colour|="bright"] h1, *:root[data-colour|="bright"] h2, *:root[data-colour|="bright"] h3, *:root[data-colour|="bright"] h4, *:root[data-colour|="bright"] h5, *:root[data-colour|="bright"] h6, *:root[data-colour|="bright"] header, *:root[data-colour|="bright"] th, *:root[data-colour|="bright"] thead, *:root[data-colour|="bright"] *.colour-heading,
 *:root[data-colour|="bright"] a[href], *:root[data-colour|="bright"] *.colour-link,
 *:root[data-colour|="bright"] strong, *:root[data-colour|="bright"] *.colour-strong {
     color: #f5f5f5;
@@ -532,7 +532,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 
 *:root[data-colour|="light"] *.colour-accent,
 *:root[data-colour|="light"] b, *:root[data-colour|="light"] cite, *:root[data-colour|="light"] em, *:root[data-colour|="light"] i, *:root[data-colour|="light"] time, *:root[data-colour|="light"] u, *:root[data-colour|="light"] *.colour-emphasis,
-*:root[data-colour|="light"] *.colour-heading,
+*:root[data-colour|="light"] caption, *:root[data-colour|="light"] h1, *:root[data-colour|="light"] h2, *:root[data-colour|="light"] h3, *:root[data-colour|="light"] h4, *:root[data-colour|="light"] h5, *:root[data-colour|="light"] h6, *:root[data-colour|="light"] header, *:root[data-colour|="light"] th, *:root[data-colour|="light"] thead, *:root[data-colour|="light"] *.colour-heading,
 *:root[data-colour|="light"] a[href], *:root[data-colour|="light"] *.colour-link {
     color: #cccccc;
 }
@@ -560,7 +560,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 
 *:root[data-colour|="medium"] *.colour-accent,
 *:root[data-colour|="medium"] b, *:root[data-colour|="medium"] cite, *:root[data-colour|="medium"] em, *:root[data-colour|="medium"] i, *:root[data-colour|="medium"] time, *:root[data-colour|="medium"] u, *:root[data-colour|="medium"] *.colour-emphasis,
-*:root[data-colour|="medium"] *.colour-heading,
+*:root[data-colour|="medium"] caption, *:root[data-colour|="medium"] h1, *:root[data-colour|="medium"] h2, *:root[data-colour|="medium"] h3, *:root[data-colour|="medium"] h4, *:root[data-colour|="medium"] h5, *:root[data-colour|="medium"] h6, *:root[data-colour|="medium"] header, *:root[data-colour|="medium"] th, *:root[data-colour|="medium"] thead, *:root[data-colour|="medium"] *.colour-heading,
 *:root[data-colour|="medium"] a[href], *:root[data-colour|="medium"] *.colour-link {
     color: #a3a3a3;
 }
@@ -588,7 +588,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 
 *:root[data-colour|="regular"] *.colour-accent,
 *:root[data-colour|="regular"] b, *:root[data-colour|="regular"] cite, *:root[data-colour|="regular"] em, *:root[data-colour|="regular"] i, *:root[data-colour|="regular"] time, *:root[data-colour|="regular"] u, *:root[data-colour|="regular"] *.colour-emphasis,
-*:root[data-colour|="regular"] *.colour-heading,
+*:root[data-colour|="regular"] caption, *:root[data-colour|="regular"] h1, *:root[data-colour|="regular"] h2, *:root[data-colour|="regular"] h3, *:root[data-colour|="regular"] h4, *:root[data-colour|="regular"] h5, *:root[data-colour|="regular"] h6, *:root[data-colour|="regular"] header, *:root[data-colour|="regular"] th, *:root[data-colour|="regular"] thead, *:root[data-colour|="regular"] *.colour-heading,
 *:root[data-colour|="regular"] a[href], *:root[data-colour|="regular"] *.colour-link {
     color: #3b3b3b;
 }
@@ -613,7 +613,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 
 *:root[data-colour|="dark"] *.colour-accent,
 *:root[data-colour|="dark"] b, *:root[data-colour|="dark"] cite, *:root[data-colour|="dark"] em, *:root[data-colour|="dark"] i, *:root[data-colour|="dark"] time, *:root[data-colour|="dark"] u, *:root[data-colour|="dark"] *.colour-emphasis,
-*:root[data-colour|="dark"] *.colour-heading,
+*:root[data-colour|="dark"] caption, *:root[data-colour|="dark"] h1, *:root[data-colour|="dark"] h2, *:root[data-colour|="dark"] h3, *:root[data-colour|="dark"] h4, *:root[data-colour|="dark"] h5, *:root[data-colour|="dark"] h6, *:root[data-colour|="dark"] header, *:root[data-colour|="dark"] th, *:root[data-colour|="dark"] thead, *:root[data-colour|="dark"] *.colour-heading,
 *:root[data-colour|="dark"] a[href], *:root[data-colour|="dark"] *.colour-link {
     color: #1c1c1c;
 }
@@ -634,7 +634,7 @@ a[href], *.colour-link, *[data-colour-transition] {
 *:root[data-colour|="dim"] *.colour-accent,
 *:root[data-colour|="dim"] code, *:root[data-colour|="dim"] pre, *:root[data-colour|="dim"] *.colour-code,
 *:root[data-colour|="dim"] b, *:root[data-colour|="dim"] cite, *:root[data-colour|="dim"] em, *:root[data-colour|="dim"] i, *:root[data-colour|="dim"] time, *:root[data-colour|="dim"] u, *:root[data-colour|="dim"] *.colour-emphasis,
-*:root[data-colour|="dim"] *.colour-heading,
+*:root[data-colour|="dim"] caption, *:root[data-colour|="dim"] h1, *:root[data-colour|="dim"] h2, *:root[data-colour|="dim"] h3, *:root[data-colour|="dim"] h4, *:root[data-colour|="dim"] h5, *:root[data-colour|="dim"] h6, *:root[data-colour|="dim"] header, *:root[data-colour|="dim"] th, *:root[data-colour|="dim"] thead, *:root[data-colour|="dim"] *.colour-heading,
 *:root[data-colour|="dim"] a[href], *:root[data-colour|="dim"] *.colour-link,
 *:root[data-colour|="dim"] strong, *:root[data-colour|="dim"] *.colour-strong {
     color: #0c0c0c;
