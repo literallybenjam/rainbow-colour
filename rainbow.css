@@ -31,136 +31,272 @@ a[href]:hover {
     color: #31b9db;
 }
 
+*:root:root:root *[data-colour|="cyan"] mark, *:root:root:root *[data-colour|="cyan"] a[href]:hover, *:root:root:root *[data-colour|="cyan"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="blue"] {
     color: #7476fc;
+}
+
+*:root:root:root *[data-colour|="blue"] mark, *:root:root:root *[data-colour|="blue"] a[href]:hover, *:root:root:root *[data-colour|="blue"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="purple"] {
     color: #c258f2;
 }
 
+*:root:root:root *[data-colour|="purple"] mark, *:root:root:root *[data-colour|="purple"] a[href]:hover, *:root:root:root *[data-colour|="purple"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="magenta"] {
     color: #e63ca4;
+}
+
+*:root:root:root *[data-colour|="magenta"] mark, *:root:root:root *[data-colour|="magenta"] a[href]:hover, *:root:root:root *[data-colour|="magenta"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="red"] {
     color: #e83f2c;
 }
 
+*:root:root:root *[data-colour|="red"] mark, *:root:root:root *[data-colour|="red"] a[href]:hover, *:root:root:root *[data-colour|="red"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="yellow"] {
     color: #f6d037;
+}
+
+*:root:root:root *[data-colour|="yellow"] mark, *:root:root:root *[data-colour|="yellow"] a[href]:hover, *:root:root:root *[data-colour|="yellow"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="green"] {
     color: #6ad622;
 }
 
+*:root:root:root *[data-colour|="green"] mark, *:root:root:root *[data-colour|="green"] a[href]:hover, *:root:root:root *[data-colour|="green"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="teal"] {
     color: #49cfa2;
+}
+
+*:root:root:root *[data-colour|="teal"] mark, *:root:root:root *[data-colour|="teal"] a[href]:hover, *:root:root:root *[data-colour|="teal"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="cyan-light"] {
     color: #bfe7f2;
 }
 
+*:root:root:root *[data-colour|="cyan-light"] mark, *:root:root:root *[data-colour|="cyan-light"] a[href]:hover, *:root:root:root *[data-colour|="cyan-light"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="blue-light"] {
     color: #d0d1f6;
+}
+
+*:root:root:root *[data-colour|="blue-light"] mark, *:root:root:root *[data-colour|="blue-light"] a[href]:hover, *:root:root:root *[data-colour|="blue-light"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="purple-light"] {
     color: #eabdff;
 }
 
+*:root:root:root *[data-colour|="purple-light"] mark, *:root:root:root *[data-colour|="purple-light"] a[href]:hover, *:root:root:root *[data-colour|="purple-light"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="magenta-light"] {
     color: #f0b2d8;
+}
+
+*:root:root:root *[data-colour|="magenta-light"] mark, *:root:root:root *[data-colour|="magenta-light"] a[href]:hover, *:root:root:root *[data-colour|="magenta-light"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="red-light"] {
     color: #f9a59b;
 }
 
+*:root:root:root *[data-colour|="red-light"] mark, *:root:root:root *[data-colour|="red-light"] a[href]:hover, *:root:root:root *[data-colour|="red-light"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="yellow-light"] {
     color: #fcf0be;
+}
+
+*:root:root:root *[data-colour|="yellow-light"] mark, *:root:root:root *[data-colour|="yellow-light"] a[href]:hover, *:root:root:root *[data-colour|="yellow-light"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="green-light"] {
     color: #d5fcbb;
 }
 
+*:root:root:root *[data-colour|="green-light"] mark, *:root:root:root *[data-colour|="green-light"] a[href]:hover, *:root:root:root *[data-colour|="green-light"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="teal-light"] {
     color: #bdf0df;
+}
+
+*:root:root:root *[data-colour|="teal-light"] mark, *:root:root:root *[data-colour|="teal-light"] a[href]:hover, *:root:root:root *[data-colour|="teal-light"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="cyan-dark"] {
     color: #00495c;
 }
 
+*:root:root:root *[data-colour|="cyan-dark"] mark, *:root:root:root *[data-colour|="cyan-dark"] a[href]:hover, *:root:root:root *[data-colour|="cyan-dark"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="blue-dark"] {
     color: #383966;
+}
+
+*:root:root:root *[data-colour|="blue-dark"] mark, *:root:root:root *[data-colour|="blue-dark"] a[href]:hover, *:root:root:root *[data-colour|="blue-dark"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="purple-dark"] {
     color: #4c3159;
 }
 
+*:root:root:root *[data-colour|="purple-dark"] mark, *:root:root:root *[data-colour|="purple-dark"] a[href]:hover, *:root:root:root *[data-colour|="purple-dark"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="magenta-dark"] {
     color: #592846;
+}
+
+*:root:root:root *[data-colour|="magenta-dark"] mark, *:root:root:root *[data-colour|="magenta-dark"] a[href]:hover, *:root:root:root *[data-colour|="magenta-dark"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="red-dark"] {
     color: #5d2721;
 }
 
+*:root:root:root *[data-colour|="red-dark"] mark, *:root:root:root *[data-colour|="red-dark"] a[href]:hover, *:root:root:root *[data-colour|="red-dark"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="yellow-dark"] {
     color: #4f420d;
+}
+
+*:root:root:root *[data-colour|="yellow-dark"] mark, *:root:root:root *[data-colour|="yellow-dark"] a[href]:hover, *:root:root:root *[data-colour|="yellow-dark"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="green-dark"] {
     color: #1f4505;
 }
 
+*:root:root:root *[data-colour|="green-dark"] mark, *:root:root:root *[data-colour|="green-dark"] a[href]:hover, *:root:root:root *[data-colour|="green-dark"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="teal-dark"] {
     color: #1c4b3b;
+}
+
+*:root:root:root *[data-colour|="teal-dark"] mark, *:root:root:root *[data-colour|="teal-dark"] a[href]:hover, *:root:root:root *[data-colour|="teal-dark"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="white"] {
     color: #f5f5f5;
 }
 
+*:root:root:root *[data-colour|="white"] mark, *:root:root:root *[data-colour|="white"] a[href]:hover, *:root:root:root *[data-colour|="white"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="bright"] {
     color: #cccccc;
+}
+
+*:root:root:root *[data-colour|="bright"] mark, *:root:root:root *[data-colour|="bright"] a[href]:hover, *:root:root:root *[data-colour|="bright"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="light"] {
     color: #a3a3a3;
 }
 
+*:root:root:root *[data-colour|="light"] mark, *:root:root:root *[data-colour|="light"] a[href]:hover, *:root:root:root *[data-colour|="light"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="medium"] {
     color: #828282;
+}
+
+*:root:root:root *[data-colour|="medium"] mark, *:root:root:root *[data-colour|="medium"] a[href]:hover, *:root:root:root *[data-colour|="medium"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="regular"] {
     color: #636363;
 }
 
+*:root:root:root *[data-colour|="regular"] mark, *:root:root:root *[data-colour|="regular"] a[href]:hover, *:root:root:root *[data-colour|="regular"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="dark"] {
     color: #3b3b3b;
+}
+
+*:root:root:root *[data-colour|="dark"] mark, *:root:root:root *[data-colour|="dark"] a[href]:hover, *:root:root:root *[data-colour|="dark"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="dim"] {
     color: #1c1c1c;
 }
 
+*:root:root:root *[data-colour|="dim"] mark, *:root:root:root *[data-colour|="dim"] a[href]:hover, *:root:root:root *[data-colour|="dim"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="black"] {
     color: #0c0c0c;
+}
+
+*:root:root:root *[data-colour|="black"] mark, *:root:root:root *[data-colour|="black"] a[href]:hover, *:root:root:root *[data-colour|="black"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour|="transparent"] {
     color: transparent;
 }
 
+*:root:root:root *[data-colour|="transparent"] mark, *:root:root:root *[data-colour|="transparent"] a[href]:hover, *:root:root:root *[data-colour|="transparent"] *.colour-link:hover {
+    background-color: #c258f2;
+}
+
 *:root:root:root *[data-colour|="inherit"] {
     color: inherit;
+}
+
+*:root:root:root *[data-colour|="inherit"] mark, *:root:root:root *[data-colour|="inherit"] a[href]:hover, *:root:root:root *[data-colour|="inherit"] *.colour-link:hover {
+    background-color: #c258f2;
 }
 
 *:root:root:root *[data-colour-background|="cyan"] {
