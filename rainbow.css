@@ -31,7 +31,7 @@ a[href]:hover {
     color: #31b9db;
 }
 
-*:root:root:root *[data-colour|="cyan"] mark, *:root:root:root *[data-colour|="cyan"] a[href]:hover, *:root:root:root *[data-colour|="cyan"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="cyan"], *:root:root:root a[href][data-colour|="cyan"]:hover, *:root:root:root *.colour-link[data-colour|="cyan"]:hover {
     background-color: #c258f2;
 }
 
@@ -39,7 +39,7 @@ a[href]:hover {
     color: #7476fc;
 }
 
-*:root:root:root *[data-colour|="blue"] mark, *:root:root:root *[data-colour|="blue"] a[href]:hover, *:root:root:root *[data-colour|="blue"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="blue"], *:root:root:root a[href][data-colour|="blue"]:hover, *:root:root:root *.colour-link[data-colour|="blue"]:hover {
     background-color: #c258f2;
 }
 
@@ -47,7 +47,7 @@ a[href]:hover {
     color: #c258f2;
 }
 
-*:root:root:root *[data-colour|="purple"] mark, *:root:root:root *[data-colour|="purple"] a[href]:hover, *:root:root:root *[data-colour|="purple"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="purple"], *:root:root:root a[href][data-colour|="purple"]:hover, *:root:root:root *.colour-link[data-colour|="purple"]:hover {
     background-color: #c258f2;
 }
 
@@ -55,7 +55,7 @@ a[href]:hover {
     color: #e63ca4;
 }
 
-*:root:root:root *[data-colour|="magenta"] mark, *:root:root:root *[data-colour|="magenta"] a[href]:hover, *:root:root:root *[data-colour|="magenta"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="magenta"], *:root:root:root a[href][data-colour|="magenta"]:hover, *:root:root:root *.colour-link[data-colour|="magenta"]:hover {
     background-color: #c258f2;
 }
 
@@ -63,7 +63,7 @@ a[href]:hover {
     color: #e83f2c;
 }
 
-*:root:root:root *[data-colour|="red"] mark, *:root:root:root *[data-colour|="red"] a[href]:hover, *:root:root:root *[data-colour|="red"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="red"], *:root:root:root a[href][data-colour|="red"]:hover, *:root:root:root *.colour-link[data-colour|="red"]:hover {
     background-color: #c258f2;
 }
 
@@ -71,7 +71,7 @@ a[href]:hover {
     color: #f6d037;
 }
 
-*:root:root:root *[data-colour|="yellow"] mark, *:root:root:root *[data-colour|="yellow"] a[href]:hover, *:root:root:root *[data-colour|="yellow"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="yellow"], *:root:root:root a[href][data-colour|="yellow"]:hover, *:root:root:root *.colour-link[data-colour|="yellow"]:hover {
     background-color: #c258f2;
 }
 
@@ -79,7 +79,7 @@ a[href]:hover {
     color: #6ad622;
 }
 
-*:root:root:root *[data-colour|="green"] mark, *:root:root:root *[data-colour|="green"] a[href]:hover, *:root:root:root *[data-colour|="green"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="green"], *:root:root:root a[href][data-colour|="green"]:hover, *:root:root:root *.colour-link[data-colour|="green"]:hover {
     background-color: #c258f2;
 }
 
@@ -87,7 +87,7 @@ a[href]:hover {
     color: #49cfa2;
 }
 
-*:root:root:root *[data-colour|="teal"] mark, *:root:root:root *[data-colour|="teal"] a[href]:hover, *:root:root:root *[data-colour|="teal"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="teal"], *:root:root:root a[href][data-colour|="teal"]:hover, *:root:root:root *.colour-link[data-colour|="teal"]:hover {
     background-color: #c258f2;
 }
 
@@ -95,7 +95,7 @@ a[href]:hover {
     color: #bfe7f2;
 }
 
-*:root:root:root *[data-colour|="cyan-light"] mark, *:root:root:root *[data-colour|="cyan-light"] a[href]:hover, *:root:root:root *[data-colour|="cyan-light"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="cyan-light"], *:root:root:root a[href][data-colour|="cyan-light"]:hover, *:root:root:root *.colour-link[data-colour|="cyan-light"]:hover {
     background-color: #c258f2;
 }
 
@@ -103,7 +103,7 @@ a[href]:hover {
     color: #d0d1f6;
 }
 
-*:root:root:root *[data-colour|="blue-light"] mark, *:root:root:root *[data-colour|="blue-light"] a[href]:hover, *:root:root:root *[data-colour|="blue-light"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="blue-light"], *:root:root:root a[href][data-colour|="blue-light"]:hover, *:root:root:root *.colour-link[data-colour|="blue-light"]:hover {
     background-color: #c258f2;
 }
 
@@ -111,7 +111,7 @@ a[href]:hover {
     color: #eabdff;
 }
 
-*:root:root:root *[data-colour|="purple-light"] mark, *:root:root:root *[data-colour|="purple-light"] a[href]:hover, *:root:root:root *[data-colour|="purple-light"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="purple-light"], *:root:root:root a[href][data-colour|="purple-light"]:hover, *:root:root:root *.colour-link[data-colour|="purple-light"]:hover {
     background-color: #c258f2;
 }
 
@@ -119,7 +119,7 @@ a[href]:hover {
     color: #f0b2d8;
 }
 
-*:root:root:root *[data-colour|="magenta-light"] mark, *:root:root:root *[data-colour|="magenta-light"] a[href]:hover, *:root:root:root *[data-colour|="magenta-light"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="magenta-light"], *:root:root:root a[href][data-colour|="magenta-light"]:hover, *:root:root:root *.colour-link[data-colour|="magenta-light"]:hover {
     background-color: #c258f2;
 }
 
@@ -127,7 +127,7 @@ a[href]:hover {
     color: #f9a59b;
 }
 
-*:root:root:root *[data-colour|="red-light"] mark, *:root:root:root *[data-colour|="red-light"] a[href]:hover, *:root:root:root *[data-colour|="red-light"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="red-light"], *:root:root:root a[href][data-colour|="red-light"]:hover, *:root:root:root *.colour-link[data-colour|="red-light"]:hover {
     background-color: #c258f2;
 }
 
@@ -135,7 +135,7 @@ a[href]:hover {
     color: #fcf0be;
 }
 
-*:root:root:root *[data-colour|="yellow-light"] mark, *:root:root:root *[data-colour|="yellow-light"] a[href]:hover, *:root:root:root *[data-colour|="yellow-light"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="yellow-light"], *:root:root:root a[href][data-colour|="yellow-light"]:hover, *:root:root:root *.colour-link[data-colour|="yellow-light"]:hover {
     background-color: #c258f2;
 }
 
@@ -143,7 +143,7 @@ a[href]:hover {
     color: #d5fcbb;
 }
 
-*:root:root:root *[data-colour|="green-light"] mark, *:root:root:root *[data-colour|="green-light"] a[href]:hover, *:root:root:root *[data-colour|="green-light"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="green-light"], *:root:root:root a[href][data-colour|="green-light"]:hover, *:root:root:root *.colour-link[data-colour|="green-light"]:hover {
     background-color: #c258f2;
 }
 
@@ -151,7 +151,7 @@ a[href]:hover {
     color: #bdf0df;
 }
 
-*:root:root:root *[data-colour|="teal-light"] mark, *:root:root:root *[data-colour|="teal-light"] a[href]:hover, *:root:root:root *[data-colour|="teal-light"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="teal-light"], *:root:root:root a[href][data-colour|="teal-light"]:hover, *:root:root:root *.colour-link[data-colour|="teal-light"]:hover {
     background-color: #c258f2;
 }
 
@@ -159,7 +159,7 @@ a[href]:hover {
     color: #00495c;
 }
 
-*:root:root:root *[data-colour|="cyan-dark"] mark, *:root:root:root *[data-colour|="cyan-dark"] a[href]:hover, *:root:root:root *[data-colour|="cyan-dark"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="cyan-dark"], *:root:root:root a[href][data-colour|="cyan-dark"]:hover, *:root:root:root *.colour-link[data-colour|="cyan-dark"]:hover {
     background-color: #c258f2;
 }
 
@@ -167,7 +167,7 @@ a[href]:hover {
     color: #383966;
 }
 
-*:root:root:root *[data-colour|="blue-dark"] mark, *:root:root:root *[data-colour|="blue-dark"] a[href]:hover, *:root:root:root *[data-colour|="blue-dark"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="blue-dark"], *:root:root:root a[href][data-colour|="blue-dark"]:hover, *:root:root:root *.colour-link[data-colour|="blue-dark"]:hover {
     background-color: #c258f2;
 }
 
@@ -175,7 +175,7 @@ a[href]:hover {
     color: #4c3159;
 }
 
-*:root:root:root *[data-colour|="purple-dark"] mark, *:root:root:root *[data-colour|="purple-dark"] a[href]:hover, *:root:root:root *[data-colour|="purple-dark"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="purple-dark"], *:root:root:root a[href][data-colour|="purple-dark"]:hover, *:root:root:root *.colour-link[data-colour|="purple-dark"]:hover {
     background-color: #c258f2;
 }
 
@@ -183,7 +183,7 @@ a[href]:hover {
     color: #592846;
 }
 
-*:root:root:root *[data-colour|="magenta-dark"] mark, *:root:root:root *[data-colour|="magenta-dark"] a[href]:hover, *:root:root:root *[data-colour|="magenta-dark"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="magenta-dark"], *:root:root:root a[href][data-colour|="magenta-dark"]:hover, *:root:root:root *.colour-link[data-colour|="magenta-dark"]:hover {
     background-color: #c258f2;
 }
 
@@ -191,7 +191,7 @@ a[href]:hover {
     color: #5d2721;
 }
 
-*:root:root:root *[data-colour|="red-dark"] mark, *:root:root:root *[data-colour|="red-dark"] a[href]:hover, *:root:root:root *[data-colour|="red-dark"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="red-dark"], *:root:root:root a[href][data-colour|="red-dark"]:hover, *:root:root:root *.colour-link[data-colour|="red-dark"]:hover {
     background-color: #c258f2;
 }
 
@@ -199,7 +199,7 @@ a[href]:hover {
     color: #4f420d;
 }
 
-*:root:root:root *[data-colour|="yellow-dark"] mark, *:root:root:root *[data-colour|="yellow-dark"] a[href]:hover, *:root:root:root *[data-colour|="yellow-dark"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="yellow-dark"], *:root:root:root a[href][data-colour|="yellow-dark"]:hover, *:root:root:root *.colour-link[data-colour|="yellow-dark"]:hover {
     background-color: #c258f2;
 }
 
@@ -207,7 +207,7 @@ a[href]:hover {
     color: #1f4505;
 }
 
-*:root:root:root *[data-colour|="green-dark"] mark, *:root:root:root *[data-colour|="green-dark"] a[href]:hover, *:root:root:root *[data-colour|="green-dark"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="green-dark"], *:root:root:root a[href][data-colour|="green-dark"]:hover, *:root:root:root *.colour-link[data-colour|="green-dark"]:hover {
     background-color: #c258f2;
 }
 
@@ -215,7 +215,7 @@ a[href]:hover {
     color: #1c4b3b;
 }
 
-*:root:root:root *[data-colour|="teal-dark"] mark, *:root:root:root *[data-colour|="teal-dark"] a[href]:hover, *:root:root:root *[data-colour|="teal-dark"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="teal-dark"], *:root:root:root a[href][data-colour|="teal-dark"]:hover, *:root:root:root *.colour-link[data-colour|="teal-dark"]:hover {
     background-color: #c258f2;
 }
 
@@ -223,7 +223,7 @@ a[href]:hover {
     color: #f5f5f5;
 }
 
-*:root:root:root *[data-colour|="white"] mark, *:root:root:root *[data-colour|="white"] a[href]:hover, *:root:root:root *[data-colour|="white"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="white"], *:root:root:root a[href][data-colour|="white"]:hover, *:root:root:root *.colour-link[data-colour|="white"]:hover {
     background-color: #c258f2;
 }
 
@@ -231,7 +231,7 @@ a[href]:hover {
     color: #cccccc;
 }
 
-*:root:root:root *[data-colour|="bright"] mark, *:root:root:root *[data-colour|="bright"] a[href]:hover, *:root:root:root *[data-colour|="bright"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="bright"], *:root:root:root a[href][data-colour|="bright"]:hover, *:root:root:root *.colour-link[data-colour|="bright"]:hover {
     background-color: #c258f2;
 }
 
@@ -239,7 +239,7 @@ a[href]:hover {
     color: #a3a3a3;
 }
 
-*:root:root:root *[data-colour|="light"] mark, *:root:root:root *[data-colour|="light"] a[href]:hover, *:root:root:root *[data-colour|="light"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="light"], *:root:root:root a[href][data-colour|="light"]:hover, *:root:root:root *.colour-link[data-colour|="light"]:hover {
     background-color: #c258f2;
 }
 
@@ -247,7 +247,7 @@ a[href]:hover {
     color: #828282;
 }
 
-*:root:root:root *[data-colour|="medium"] mark, *:root:root:root *[data-colour|="medium"] a[href]:hover, *:root:root:root *[data-colour|="medium"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="medium"], *:root:root:root a[href][data-colour|="medium"]:hover, *:root:root:root *.colour-link[data-colour|="medium"]:hover {
     background-color: #c258f2;
 }
 
@@ -255,7 +255,7 @@ a[href]:hover {
     color: #636363;
 }
 
-*:root:root:root *[data-colour|="regular"] mark, *:root:root:root *[data-colour|="regular"] a[href]:hover, *:root:root:root *[data-colour|="regular"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="regular"], *:root:root:root a[href][data-colour|="regular"]:hover, *:root:root:root *.colour-link[data-colour|="regular"]:hover {
     background-color: #c258f2;
 }
 
@@ -263,7 +263,7 @@ a[href]:hover {
     color: #3b3b3b;
 }
 
-*:root:root:root *[data-colour|="dark"] mark, *:root:root:root *[data-colour|="dark"] a[href]:hover, *:root:root:root *[data-colour|="dark"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="dark"], *:root:root:root a[href][data-colour|="dark"]:hover, *:root:root:root *.colour-link[data-colour|="dark"]:hover {
     background-color: #c258f2;
 }
 
@@ -271,7 +271,7 @@ a[href]:hover {
     color: #1c1c1c;
 }
 
-*:root:root:root *[data-colour|="dim"] mark, *:root:root:root *[data-colour|="dim"] a[href]:hover, *:root:root:root *[data-colour|="dim"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="dim"], *:root:root:root a[href][data-colour|="dim"]:hover, *:root:root:root *.colour-link[data-colour|="dim"]:hover {
     background-color: #c258f2;
 }
 
@@ -279,7 +279,7 @@ a[href]:hover {
     color: #0c0c0c;
 }
 
-*:root:root:root *[data-colour|="black"] mark, *:root:root:root *[data-colour|="black"] a[href]:hover, *:root:root:root *[data-colour|="black"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="black"], *:root:root:root a[href][data-colour|="black"]:hover, *:root:root:root *.colour-link[data-colour|="black"]:hover {
     background-color: #c258f2;
 }
 
@@ -287,7 +287,7 @@ a[href]:hover {
     color: transparent;
 }
 
-*:root:root:root *[data-colour|="transparent"] mark, *:root:root:root *[data-colour|="transparent"] a[href]:hover, *:root:root:root *[data-colour|="transparent"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="transparent"], *:root:root:root a[href][data-colour|="transparent"]:hover, *:root:root:root *.colour-link[data-colour|="transparent"]:hover {
     background-color: #c258f2;
 }
 
@@ -295,7 +295,7 @@ a[href]:hover {
     color: inherit;
 }
 
-*:root:root:root *[data-colour|="inherit"] mark, *:root:root:root *[data-colour|="inherit"] a[href]:hover, *:root:root:root *[data-colour|="inherit"] *.colour-link:hover {
+*:root:root:root mark[data-colour|="inherit"], *:root:root:root a[href][data-colour|="inherit"]:hover, *:root:root:root *.colour-link[data-colour|="inherit"]:hover {
     background-color: #c258f2;
 }
 
