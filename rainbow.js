@@ -11,9 +11,8 @@ Rainbow.parseText = function(text, starting_index) {
     var final_text = "";
     var i;
     var colour_index = 0;
-    if (!isNaN(Number(starting_index))) starting_index = Number(starting_index) % 8;
-    else if (Rainbow.colours.indexOf(starting_index) !== -1) starting_index = Rainbow.colours.indexOf(starting_index);
-    else colour_index = Number(starting_index) % Rainbow.colours.length;
+    if (!isNaN(Number(starting_index))) colour_index = Number(starting_index) % 8;
+    else if (Rainbow.colours.indexOf(starting_index) !== -1) colour_index = Rainbow.colours.indexOf(starting_index);
     for (i = 0; i < text.length; i++) {
         if (/\s/.test(text[i])) {
             final_text += text[i];
