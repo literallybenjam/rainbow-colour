@@ -83,6 +83,8 @@ Note that whitespace is left unmodified.
 `Rainbow.parseDocument(document)` parses the given `document` (`window.document` if not specified) by running `Rainbow.parseText()` on the text nodes of every element with the `data-rainbow` attribute set, and replacing them with the result.
 The value of `data-rainbow` is used to determine the `starting_index`, above.
 
+Note that `Rainbow.parseDocument()` will *only* parse text node children of elements with `data-rainbow` set; it will *not* parse element children.
+
 ## Endmatter:
 
 RAINBOW was coded by [@literallybenjam](https://twitter.com/literallybenjam).
