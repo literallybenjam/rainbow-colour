@@ -15,6 +15,16 @@ a[href], *.colour-link, *[data-colour-transition] {
     transition: color .5s, background-color .5s, line-colour .5s, outline-color .5s, text-decoration-color .5s, text-emphasis-color .5s, fill .5s, stroke .5s;
 }
 
+/*  ANCHOR BASICS  */
+
+a[href] {
+    text-decoration-color: currentColor;
+}
+
+a[href]:hover {
+    text-decoration-color: transparent;
+}
+
 /*  BASIC COLOURING  */
 
 *:root *:not(:root)[data-colour|="cyan"] {
