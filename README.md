@@ -73,7 +73,7 @@ If `starting_index` is not specified or not valid, it will be assumed to be 0.
 As an example, `Rainbow.parseText("hi :)", "red");` will return a `<span>` element with the following `outerHTML`:
 
 ```html
-<span><span data-colour="red">h</span><span data-colour="yellow">i</span> <span data-colour="green">:</span><span data-colour="teal">)</span></span>
+<span data-colour="transparent"><span data-colour="red">h</span><span data-colour="yellow">i</span> <span data-colour="green">:</span><span data-colour="teal">)</span></span>
 ```
 
 Note that whitespace is left unmodified.

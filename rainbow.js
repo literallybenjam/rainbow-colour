@@ -8,6 +8,7 @@ var Rainbow = {
 
 Rainbow.parseText = function(text, starting_index) {
     var span = document.createElement("SPAN");
+    span.dataset.colour = "transparent";
     var final_text = "";
     var i;
     var colour_index = 0;
