@@ -1,9 +1,15 @@
+/*  INHERITANCE  */
+
 *:root * {
     color: inherit;
     background: transparent;
     border-color: currentColor;
     outline-color: currentColor;
     text-decoration-color: currentColor;
+}
+
+*:root:root:root a[href]:hover *, *:root:root:root *[data-colour] *:not([data-colour]) {
+    color: inherit;
 }
 
 /*  TRANSITIONS  */
@@ -577,7 +583,7 @@ a[href]:hover {
     color: #383966;
 }
 
-*:root[data-colour|="blue-dark"] mar, *:root[data-colour|="blue-dark"] a[href]:hover, *:root[data-colour|="blue-dark"] *.colour-link:hoverk {
+*:root[data-colour|="blue-dark"] mark, *:root[data-colour|="blue-dark"] a[href]:hover, *:root[data-colour|="blue-dark"] *.colour-link:hover {
     background-color: #383966;
 }
 
