@@ -12,6 +12,10 @@
     color: inherit;
 }
 
+*:root:root:root a[href]:hover *::-moz-selection, *:root:root:root *[data-colour] *:not([data-colour])::-moz-selection {
+    background-color: inherit;
+}
+
 *:root:root:root a[href]:hover *::selection, *:root:root:root *[data-colour] *:not([data-colour])::selection {
     background-color: inherit;
 }
@@ -1095,416 +1099,6 @@ a[href]:hover {
     color: transparent;
 }
 
-/*  SELECTION COLOURS  */
-
-*:root[data-colour-background|="cyan"] *::selection {
-    color: #31b9db;
-}
-
-*:root[data-colour-background|="blue"] *::selection {
-    color: #7476fc;
-}
-
-*:root[data-colour-background|="purple"] *::selection {
-    color: #c258f2;
-}
-
-*:root[data-colour-background|="magenta"] *::selection {
-    color: #e63ca4;
-}
-
-*:root[data-colour-background|="red"] *::selection {
-    color: #e83f2c;
-}
-
-*:root[data-colour-background|="yellow"] *::selection {
-    color: #f6d037;
-}
-
-*:root[data-colour-background|="green"] *::selection {
-    color: #6ad622;
-}
-
-*:root[data-colour-background|="teal"] *::selection {
-    color: #49cfa2;
-}
-
-*:root[data-colour-background|="cyan-light"] *::selection {
-    color: #bfe7f2;
-}
-
-*:root[data-colour-background|="blue-light"] *::selection {
-    color: #d0d1f6;
-}
-
-*:root[data-colour-background|="purple-light"] *::selection {
-    color: #eabdff;
-}
-
-*:root[data-colour-background|="magenta-light"] *::selection {
-    color: #f0b2d8;
-}
-
-*:root[data-colour-background|="red-light"] *::selection {
-    color: #f9a59b;
-}
-
-*:root[data-colour-background|="yellow-light"] *::selection {
-    color: #fcf0be;
-}
-
-*:root[data-colour-background|="green-light"] *::selection {
-    color: #d5fcbb;
-}
-
-*:root[data-colour-background|="teal-light"] *::selection {
-    color: #bdf0df;
-}
-
-*:root[data-colour-background|="cyan-dark"] *::selection {
-    color: #00495c;
-}
-
-*:root[data-colour-background|="blue-dark"] *::selection {
-    color: #383966;
-}
-
-*:root[data-colour-background|="purple-dark"] *::selection {
-    color: #4c3159;
-}
-
-*:root[data-colour-background|="magenta-dark"] *::selection {
-    color: #592846;
-}
-
-*:root[data-colour-background|="red-dark"] *::selection {
-    color: #5d2721;
-}
-
-*:root[data-colour-background|="yellow-dark"] *::selection {
-    color: #4f420d;
-}
-
-*:root[data-colour-background|="green-dark"] *::selection {
-    color: #1f4505;
-}
-
-*:root[data-colour-background|="teal-dark"] *::selection {
-    color: #1c4b3b;
-}
-
-*:root[data-colour-background|="white"] *::selection {
-    color: #f5f5f5;
-}
-
-*:root[data-colour-background|="bright"] *::selection {
-    color: #cccccc;
-}
-
-*:root[data-colour-background|="light"] *::selection {
-    color: #a3a3a3;
-}
-
-*:root[data-colour-background|="medium"] *::selection {
-    color: #828282;
-}
-
-*:root[data-colour-background|="regular"] *::selection {
-    color: #636363;
-}
-
-*:root[data-colour-background|="dark"] *::selection {
-    color: #3b3b3b;
-}
-
-*:root[data-colour-background|="dim"] *::selection {
-    color: #1c1c1c;
-}
-
-*:root[data-colour-background|="black"] *::selection {
-    color: #0c0c0c;
-}
-
-*:root[data-colour-background|="inherit"] *::selection {
-    color: inherit;
-}
-
-*:root[data-colour-background|="transparent"] *::selection {
-    color: transparent;
-}
-
-*:root[data-colour|="cyan"] *::selection {
-    background-color: #31b9db;
-}
-
-*:root[data-colour|="blue"] *::selection {
-    background-color: #7476fc;
-}
-
-*:root[data-colour|="purple"] *::selection {
-    background-color: #c258f2;
-}
-
-*:root[data-colour|="magenta"] *::selection {
-    background-color: #e63ca4;
-}
-
-*:root[data-colour|="red"] *::selection {
-    background-color: #e83f2c;
-}
-
-*:root[data-colour|="yellow"] *::selection {
-    background-color: #f6d037;
-}
-
-*:root[data-colour|="green"] *::selection {
-    background-color: #6ad622;
-}
-
-*:root[data-colour|="teal"] *::selection {
-    background-color: #49cfa2;
-}
-
-*:root[data-colour|="cyan-light"] *::selection {
-    background-color: #bfe7f2;
-}
-
-*:root[data-colour|="blue-light"] *::selection {
-    background-color: #d0d1f6;
-}
-
-*:root[data-colour|="purple-light"] *::selection {
-    background-color: #eabdff;
-}
-
-*:root[data-colour|="magenta-light"] *::selection {
-    background-color: #f0b2d8;
-}
-
-*:root[data-colour|="red-light"] *::selection {
-    background-color: #f9a59b;
-}
-
-*:root[data-colour|="yellow-light"] *::selection {
-    background-color: #fcf0be;
-}
-
-*:root[data-colour|="green-light"] *::selection {
-    background-color: #d5fcbb;
-}
-
-*:root[data-colour|="teal-light"] *::selection {
-    background-color: #bdf0df;
-}
-
-*:root[data-colour|="cyan-dark"] *::selection {
-    background-color: #00495c;
-}
-
-*:root[data-colour|="blue-dark"] *::selection {
-    background-color: #383966;
-}
-
-*:root[data-colour|="purple-dark"] *::selection {
-    background-color: #4c3159;
-}
-
-*:root[data-colour|="magenta-dark"] *::selection {
-    background-color: #592846;
-}
-
-*:root[data-colour|="red-dark"] *::selection {
-    background-color: #5d2721;
-}
-
-*:root[data-colour|="yellow-dark"] *::selection {
-    background-color: #4f420d;
-}
-
-*:root[data-colour|="green-dark"] *::selection {
-    background-color: #1f4505;
-}
-
-*:root[data-colour|="teal-dark"] *::selection {
-    background-color: #1c4b3b;
-}
-
-*:root[data-colour|="white"] *::selection {
-    background-color: #f5f5f5;
-}
-
-*:root[data-colour|="bright"] *::selection {
-    background-color: #cccccc;
-}
-
-*:root[data-colour|="light"] *::selection {
-    background-color: #a3a3a3;
-}
-
-*:root[data-colour|="medium"] *::selection {
-    background-color: #828282;
-}
-
-*:root[data-colour|="regular"] *::selection {
-    background-color: #636363;
-}
-
-*:root[data-colour|="dark"] *::selection {
-    background-color: #3b3b3b;
-}
-
-*:root[data-colour|="dim"] *::selection {
-    background-color: #1c1c1c;
-}
-
-*:root[data-colour|="black"] *::selection {
-    background-color: #0c0c0c;
-}
-
-*:root[data-colour|="inherit"] *::selection {
-    background-color: inherit;
-}
-
-*:root[data-colour|="transparent"] *::selection {
-    background-color: transparent;
-}
-
-*:root:root:root *[data-colour|="cyan"]::selection {
-    background-color: #31b9db;
-}
-
-*:root:root:root *[data-colour|="blue"]::selection {
-    background-color: #7476fc;
-}
-
-*:root:root:root *[data-colour|="purple"]::selection {
-    background-color: #c258f2;
-}
-
-*:root:root:root *[data-colour|="magenta"]::selection {
-    background-color: #e63ca4;
-}
-
-*:root:root:root *[data-colour|="red"]::selection {
-    background-color: #e83f2c;
-}
-
-*:root:root:root *[data-colour|="yellow"]::selection {
-    background-color: #f6d037;
-}
-
-*:root:root:root *[data-colour|="green"]::selection {
-    background-color: #6ad622;
-}
-
-*:root:root:root *[data-colour|="teal"]::selection {
-    background-color: #49cfa2;
-}
-
-*:root:root:root *[data-colour|="cyan-light"]::selection {
-    background-color: #bfe7f2;
-}
-
-*:root:root:root *[data-colour|="blue-light"]::selection {
-    background-color: #d0d1f6;
-}
-
-*:root:root:root *[data-colour|="purple-light"]::selection {
-    background-color: #eabdff;
-}
-
-*:root:root:root *[data-colour|="magenta-light"]::selection {
-    background-color: #f0b2d8;
-}
-
-*:root:root:root *[data-colour|="red-light"]::selection {
-    background-color: #f9a59b;
-}
-
-*:root:root:root *[data-colour|="yellow-light"]::selection {
-    background-color: #fcf0be;
-}
-
-*:root:root:root *[data-colour|="green-light"]::selection {
-    background-color: #d5fcbb;
-}
-
-*:root:root:root *[data-colour|="teal-light"]::selection {
-    background-color: #bdf0df;
-}
-
-*:root:root:root *[data-colour|="cyan-dark"]::selection {
-    background-color: #00495c;
-}
-
-*:root:root:root *[data-colour|="blue-dark"]::selection {
-    background-color: #383966;
-}
-
-*:root:root:root *[data-colour|="purple-dark"]::selection {
-    background-color: #4c3159;
-}
-
-*:root:root:root *[data-colour|="magenta-dark"]::selection {
-    background-color: #592846;
-}
-
-*:root:root:root *[data-colour|="red-dark"]::selection {
-    background-color: #5d2721;
-}
-
-*:root:root:root *[data-colour|="yellow-dark"]::selection {
-    background-color: #4f420d;
-}
-
-*:root:root:root *[data-colour|="green-dark"]::selection {
-    background-color: #1f4505;
-}
-
-*:root:root:root *[data-colour|="teal-dark"]::selection {
-    background-color: #1c4b3b;
-}
-
-*:root:root:root *[data-colour|="white"]::selection {
-    background-color: #f5f5f5;
-}
-
-*:root:root:root *[data-colour|="bright"]::selection {
-    background-color: #cccccc;
-}
-
-*:root:root:root *[data-colour|="light"]::selection {
-    background-color: #a3a3a3;
-}
-
-*:root:root:root *[data-colour|="medium"]::selection {
-    background-color: #828282;
-}
-
-*:root:root:root *[data-colour|="regular"]::selection {
-    background-color: #636363;
-}
-
-*:root:root:root *[data-colour|="dark"]::selection {
-    background-color: #3b3b3b;
-}
-
-*:root:root:root *[data-colour|="dim"]::selection {
-    background-color: #1c1c1c;
-}
-
-*:root:root:root *[data-colour|="black"]::selection {
-    background-color: #0c0c0c;
-}
-
-*:root:root:root *[data-colour|="transparent"]::selection {
-    background-color: transparent;
-}
-
-*:root:root:root *[data-colour|="inherit"]::selection {
-    background-color: inherit;
-}
-
 /*  -MOZ-SELECTION COLOURS  */
 
 *:root[data-colour-background|="cyan"] *::-moz-selection {
@@ -1912,5 +1506,415 @@ a[href]:hover {
 }
 
 *:root:root:root *[data-colour|="inherit"]::-moz-selection {
+    background-color: inherit;
+}
+
+/*  SELECTION COLOURS  */
+
+*:root[data-colour-background|="cyan"] *::selection {
+    color: #31b9db;
+}
+
+*:root[data-colour-background|="blue"] *::selection {
+    color: #7476fc;
+}
+
+*:root[data-colour-background|="purple"] *::selection {
+    color: #c258f2;
+}
+
+*:root[data-colour-background|="magenta"] *::selection {
+    color: #e63ca4;
+}
+
+*:root[data-colour-background|="red"] *::selection {
+    color: #e83f2c;
+}
+
+*:root[data-colour-background|="yellow"] *::selection {
+    color: #f6d037;
+}
+
+*:root[data-colour-background|="green"] *::selection {
+    color: #6ad622;
+}
+
+*:root[data-colour-background|="teal"] *::selection {
+    color: #49cfa2;
+}
+
+*:root[data-colour-background|="cyan-light"] *::selection {
+    color: #bfe7f2;
+}
+
+*:root[data-colour-background|="blue-light"] *::selection {
+    color: #d0d1f6;
+}
+
+*:root[data-colour-background|="purple-light"] *::selection {
+    color: #eabdff;
+}
+
+*:root[data-colour-background|="magenta-light"] *::selection {
+    color: #f0b2d8;
+}
+
+*:root[data-colour-background|="red-light"] *::selection {
+    color: #f9a59b;
+}
+
+*:root[data-colour-background|="yellow-light"] *::selection {
+    color: #fcf0be;
+}
+
+*:root[data-colour-background|="green-light"] *::selection {
+    color: #d5fcbb;
+}
+
+*:root[data-colour-background|="teal-light"] *::selection {
+    color: #bdf0df;
+}
+
+*:root[data-colour-background|="cyan-dark"] *::selection {
+    color: #00495c;
+}
+
+*:root[data-colour-background|="blue-dark"] *::selection {
+    color: #383966;
+}
+
+*:root[data-colour-background|="purple-dark"] *::selection {
+    color: #4c3159;
+}
+
+*:root[data-colour-background|="magenta-dark"] *::selection {
+    color: #592846;
+}
+
+*:root[data-colour-background|="red-dark"] *::selection {
+    color: #5d2721;
+}
+
+*:root[data-colour-background|="yellow-dark"] *::selection {
+    color: #4f420d;
+}
+
+*:root[data-colour-background|="green-dark"] *::selection {
+    color: #1f4505;
+}
+
+*:root[data-colour-background|="teal-dark"] *::selection {
+    color: #1c4b3b;
+}
+
+*:root[data-colour-background|="white"] *::selection {
+    color: #f5f5f5;
+}
+
+*:root[data-colour-background|="bright"] *::selection {
+    color: #cccccc;
+}
+
+*:root[data-colour-background|="light"] *::selection {
+    color: #a3a3a3;
+}
+
+*:root[data-colour-background|="medium"] *::selection {
+    color: #828282;
+}
+
+*:root[data-colour-background|="regular"] *::selection {
+    color: #636363;
+}
+
+*:root[data-colour-background|="dark"] *::selection {
+    color: #3b3b3b;
+}
+
+*:root[data-colour-background|="dim"] *::selection {
+    color: #1c1c1c;
+}
+
+*:root[data-colour-background|="black"] *::selection {
+    color: #0c0c0c;
+}
+
+*:root[data-colour-background|="inherit"] *::selection {
+    color: inherit;
+}
+
+*:root[data-colour-background|="transparent"] *::selection {
+    color: transparent;
+}
+
+*:root[data-colour|="cyan"] *::selection {
+    background-color: #31b9db;
+}
+
+*:root[data-colour|="blue"] *::selection {
+    background-color: #7476fc;
+}
+
+*:root[data-colour|="purple"] *::selection {
+    background-color: #c258f2;
+}
+
+*:root[data-colour|="magenta"] *::selection {
+    background-color: #e63ca4;
+}
+
+*:root[data-colour|="red"] *::selection {
+    background-color: #e83f2c;
+}
+
+*:root[data-colour|="yellow"] *::selection {
+    background-color: #f6d037;
+}
+
+*:root[data-colour|="green"] *::selection {
+    background-color: #6ad622;
+}
+
+*:root[data-colour|="teal"] *::selection {
+    background-color: #49cfa2;
+}
+
+*:root[data-colour|="cyan-light"] *::selection {
+    background-color: #bfe7f2;
+}
+
+*:root[data-colour|="blue-light"] *::selection {
+    background-color: #d0d1f6;
+}
+
+*:root[data-colour|="purple-light"] *::selection {
+    background-color: #eabdff;
+}
+
+*:root[data-colour|="magenta-light"] *::selection {
+    background-color: #f0b2d8;
+}
+
+*:root[data-colour|="red-light"] *::selection {
+    background-color: #f9a59b;
+}
+
+*:root[data-colour|="yellow-light"] *::selection {
+    background-color: #fcf0be;
+}
+
+*:root[data-colour|="green-light"] *::selection {
+    background-color: #d5fcbb;
+}
+
+*:root[data-colour|="teal-light"] *::selection {
+    background-color: #bdf0df;
+}
+
+*:root[data-colour|="cyan-dark"] *::selection {
+    background-color: #00495c;
+}
+
+*:root[data-colour|="blue-dark"] *::selection {
+    background-color: #383966;
+}
+
+*:root[data-colour|="purple-dark"] *::selection {
+    background-color: #4c3159;
+}
+
+*:root[data-colour|="magenta-dark"] *::selection {
+    background-color: #592846;
+}
+
+*:root[data-colour|="red-dark"] *::selection {
+    background-color: #5d2721;
+}
+
+*:root[data-colour|="yellow-dark"] *::selection {
+    background-color: #4f420d;
+}
+
+*:root[data-colour|="green-dark"] *::selection {
+    background-color: #1f4505;
+}
+
+*:root[data-colour|="teal-dark"] *::selection {
+    background-color: #1c4b3b;
+}
+
+*:root[data-colour|="white"] *::selection {
+    background-color: #f5f5f5;
+}
+
+*:root[data-colour|="bright"] *::selection {
+    background-color: #cccccc;
+}
+
+*:root[data-colour|="light"] *::selection {
+    background-color: #a3a3a3;
+}
+
+*:root[data-colour|="medium"] *::selection {
+    background-color: #828282;
+}
+
+*:root[data-colour|="regular"] *::selection {
+    background-color: #636363;
+}
+
+*:root[data-colour|="dark"] *::selection {
+    background-color: #3b3b3b;
+}
+
+*:root[data-colour|="dim"] *::selection {
+    background-color: #1c1c1c;
+}
+
+*:root[data-colour|="black"] *::selection {
+    background-color: #0c0c0c;
+}
+
+*:root[data-colour|="inherit"] *::selection {
+    background-color: inherit;
+}
+
+*:root[data-colour|="transparent"] *::selection {
+    background-color: transparent;
+}
+
+*:root:root:root *[data-colour|="cyan"]::selection {
+    background-color: #31b9db;
+}
+
+*:root:root:root *[data-colour|="blue"]::selection {
+    background-color: #7476fc;
+}
+
+*:root:root:root *[data-colour|="purple"]::selection {
+    background-color: #c258f2;
+}
+
+*:root:root:root *[data-colour|="magenta"]::selection {
+    background-color: #e63ca4;
+}
+
+*:root:root:root *[data-colour|="red"]::selection {
+    background-color: #e83f2c;
+}
+
+*:root:root:root *[data-colour|="yellow"]::selection {
+    background-color: #f6d037;
+}
+
+*:root:root:root *[data-colour|="green"]::selection {
+    background-color: #6ad622;
+}
+
+*:root:root:root *[data-colour|="teal"]::selection {
+    background-color: #49cfa2;
+}
+
+*:root:root:root *[data-colour|="cyan-light"]::selection {
+    background-color: #bfe7f2;
+}
+
+*:root:root:root *[data-colour|="blue-light"]::selection {
+    background-color: #d0d1f6;
+}
+
+*:root:root:root *[data-colour|="purple-light"]::selection {
+    background-color: #eabdff;
+}
+
+*:root:root:root *[data-colour|="magenta-light"]::selection {
+    background-color: #f0b2d8;
+}
+
+*:root:root:root *[data-colour|="red-light"]::selection {
+    background-color: #f9a59b;
+}
+
+*:root:root:root *[data-colour|="yellow-light"]::selection {
+    background-color: #fcf0be;
+}
+
+*:root:root:root *[data-colour|="green-light"]::selection {
+    background-color: #d5fcbb;
+}
+
+*:root:root:root *[data-colour|="teal-light"]::selection {
+    background-color: #bdf0df;
+}
+
+*:root:root:root *[data-colour|="cyan-dark"]::selection {
+    background-color: #00495c;
+}
+
+*:root:root:root *[data-colour|="blue-dark"]::selection {
+    background-color: #383966;
+}
+
+*:root:root:root *[data-colour|="purple-dark"]::selection {
+    background-color: #4c3159;
+}
+
+*:root:root:root *[data-colour|="magenta-dark"]::selection {
+    background-color: #592846;
+}
+
+*:root:root:root *[data-colour|="red-dark"]::selection {
+    background-color: #5d2721;
+}
+
+*:root:root:root *[data-colour|="yellow-dark"]::selection {
+    background-color: #4f420d;
+}
+
+*:root:root:root *[data-colour|="green-dark"]::selection {
+    background-color: #1f4505;
+}
+
+*:root:root:root *[data-colour|="teal-dark"]::selection {
+    background-color: #1c4b3b;
+}
+
+*:root:root:root *[data-colour|="white"]::selection {
+    background-color: #f5f5f5;
+}
+
+*:root:root:root *[data-colour|="bright"]::selection {
+    background-color: #cccccc;
+}
+
+*:root:root:root *[data-colour|="light"]::selection {
+    background-color: #a3a3a3;
+}
+
+*:root:root:root *[data-colour|="medium"]::selection {
+    background-color: #828282;
+}
+
+*:root:root:root *[data-colour|="regular"]::selection {
+    background-color: #636363;
+}
+
+*:root:root:root *[data-colour|="dark"]::selection {
+    background-color: #3b3b3b;
+}
+
+*:root:root:root *[data-colour|="dim"]::selection {
+    background-color: #1c1c1c;
+}
+
+*:root:root:root *[data-colour|="black"]::selection {
+    background-color: #0c0c0c;
+}
+
+*:root:root:root *[data-colour|="transparent"]::selection {
+    background-color: transparent;
+}
+
+*:root:root:root *[data-colour|="inherit"]::selection {
     background-color: inherit;
 }
