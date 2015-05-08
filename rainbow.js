@@ -6,37 +6,55 @@ var Rainbow = {
     parseText: undefined
 };
 
-Rainbow.parseText = function(text, starting_index) {
-    var span = document.createElement("SPAN");
-    var final_text = "";
-    var i;
-    var colour_index = 0;
-    if (!isNaN(Number(starting_index))) colour_index = Number(starting_index) % 8;
-    else if (Rainbow.colours.indexOf(starting_index) !== -1) colour_index = Rainbow.colours.indexOf(starting_index);
-    for (i = 0; i < text.length; i++) {
-        if (/\s/.test(text[i])) {
-            final_text += text[i];
-        }
-        else {
-            final_text += '<span data-colour="' + Rainbow.colours[colour_index++] + '">' + text[i] + "</span>";
-            colour_index %= Rainbow.colours.length;
-        }
-    }
-    span.innerHTML = final_text;
-    span.dataset.colour = "transparent";
-    return span;
-}
+Rainbow.parse = function(data, starting_index) {
 
-Rainbow.parseDocument = function(document) {
-    if (!document) document = window.document;
-    var elements = document.querySelectorAll("*[data-rainbow]");
+    var colour_index = 0;
     var i;
     var j;
-    for (i = 0; i < elements.length; i++) {
-        var children = elements.item(i).childNodes;
-        for (j = 0; j < children.length; j++) {
-            if (children.item(j).nodeType !== 3) continue;
-            elements.item(i).replaceChild(Rainbow.parseText(children.item(j).textContent, elements.item(i).dataset.rainbow), children.item(j));
-        }
+    var r;
+    if (!isNaN(Number(starting_index))) colour_index = Number(starting_index) % 8;
+    else if (Rainbow.colours.indexOf(starting_index) !== -1) colour_index = Rainbow.colours.indexOf(starting_index);
+
+    switch (typeof text) {
+
+        case "text":
+            r = document.createElement("SPAN");
+            var final_text = "";
+            for (i = 0; i < data.length; i++) {
+                if (/\s/.test(data[i])) {
+                    final_text += data[i];
+                }
+                else {
+                    final_text += '<span data-colour="' + Rainbow.colours[colour_index++] + '">' + data[i] + "</span>";
+                    colour_index %= Rainbow.colours.length;
+                }
+            }
+            r.innerHTML = final_text;
+            r.dataset.colour = "transparent";
+            break;
+
+        case "undefined":
+        case "object":
+            if (!data) data = document.body;
+            else if (data instanceof Document) data = data.documentElement;
+            else if (!(data instanceof Element)) break;
+            var elements = data.querySelectorAll("*[data-rainbow]");
+            for (i = 0; i < elements.length; i++) {
+                var children = elements.item(i).childNodes;
+                var element_starting_index = elements.item(i).dataset.rainbow;
+                if (element_starting_index === "" || (isNaN(Number(element_starting_index)) && Rainbow.colours.indexOf(starting_index) !== -1)) element_starting_index = colour_index;
+                for (j = 0; j < children.length; j++) {
+                    if (children.item(j).nodeType !== 3) continue;
+                    elements.item(i).replaceChild(Rainbow.parseText(children.item(j).textContent, elements.item(i).dataset.rainbow), children.item(j));
+                }
+            }
+            r = data;
+
     }
+
+    return r;
+
+}
+
+Rainbow.parse = function(element) {
 }
