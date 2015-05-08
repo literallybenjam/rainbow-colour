@@ -86,6 +86,8 @@ Note that whitespace is left unmodified.
 The value of `data-rainbow` is used to determine the `starting_index`, above.
 You may provide a `starting-index` to be used in the cases where `data-rainbow` is not specified; `data-rainbow` will always be used where given.
 
+The return value of `Rainbow.parse(element, starting_index)` is the element which was parsed.
+
 Note that `Rainbow.parse(element, starting_index)` will *only* parse text node children of elements with `data-rainbow` set; it will *not* parse element children.
 This not only allows for faster parsing, but also prevents parsing the same element multiple times should `Rainbow.parse()` be called more than once.
 
