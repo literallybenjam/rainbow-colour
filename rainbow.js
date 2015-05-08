@@ -66,14 +66,14 @@ Rainbow.timeParse = function(element) {
 
         time_element = time_elements.item(i);
 
-        //  no datetime attribute
-        if (!time_element.datetime || time_element.dataset.rainbowSkip !== undefined || time_element.dataset.colour) continue;
+        //  no dateTime attribute
+        if (!time_element.dateTime || time_element.dataset.rainbowSkip !== undefined || time_element.dataset.colour) continue;
 
         //  YYYY
-        if (time_element.datetime.length === 4) time_element.dataset.colour = Rainbow.colours[Number(time_element.datetime) % 8];
+        if (time_element.dateTime.length === 4) time_element.dataset.colour = Rainbow.colours[Number(time_element.dateTime) % 8];
 
         //  YYYY-MM
-        else if (time_element.datetime.length === 7) time_element.dataset.colour = [
+        else if (time_element.dateTime.length === 7) time_element.dataset.colour = [
             "red",           //  january
             "purple",        //  february
             "cyan",          //  march
@@ -86,22 +86,22 @@ Rainbow.timeParse = function(element) {
             "teal",          //  october
             "yellow",        //  november
             "teal-light"     //  december
-        ][Number(time_element.datetime.substr(5,2))];
+        ][Number(time_element.dateTime.substr(5,2))];
 
         //  YYYY-MM-DD and YYYY-MM-DDT…
-        else if (time_element.datetime.length >= 10 && time_element.datetime[4] === "-") time_element.dataset.colour = Rainbow.colours[(Date.parse(time_element.datetime.substr(0,10)) / 86400000) % 8];
+        else if (time_element.dateTime.length >= 10 && time_element.dateTime[4] === "-") time_element.dataset.colour = Rainbow.colours[(Date.parse(time_element.dateTime.substr(0,10)) / 86400000) % 8];
 
         //  MM-DD
-        else if (time_element.datetime.length === 5 && time_element.datetime[2] === "-") time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-" + time_element.datetime) / 86400000) % 8];
+        else if (time_element.dateTime.length === 5 && time_element.dateTime[2] === "-") time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-" + time_element.dateTime) / 86400000) % 8];
 
         //  HH:MM
-        else if (time_element.datetime.length === 5 && time_element.datetime[2] === ":")  time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-01-01T" + time_element.datetime) / 60000) % 8];
+        else if (time_element.dateTime.length === 5 && time_element.dateTime[2] === ":")  time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-01-01T" + time_element.dateTime) / 60000) % 8];
 
         //  HH:MM:SS
-        else if (time_element.datetime.length === 8 && time_element.datetime[2] === ":")  time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-01-01T" + time_element.datetime) / 1000) % 8];
+        else if (time_element.dateTime.length === 8 && time_element.dateTime[2] === ":")  time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-01-01T" + time_element.dateTime) / 1000) % 8];
 
         //  HH:MM:SS.mmm
-        else if (time_element.datetime.length === 12 && time_element.datetime[2] === ":")  time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-01-01T" + time_element.datetime)) % 8];
+        else if (time_element.dateTime.length === 12 && time_element.dateTime[2] === ":")  time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-01-01T" + time_element.dateTime)) % 8];
 
     }
     return element;
