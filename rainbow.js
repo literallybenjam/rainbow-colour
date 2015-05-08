@@ -15,7 +15,7 @@ Rainbow.parse = function(data, starting_index) {
     if (!isNaN(Number(starting_index))) colour_index = Number(starting_index) % 8;
     else if (Rainbow.colours.indexOf(starting_index) !== -1) colour_index = Rainbow.colours.indexOf(starting_index);
 
-    switch (typeof text) {
+    switch (typeof data) {
 
         case "string":
             r = document.createElement("SPAN");
