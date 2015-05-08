@@ -45,7 +45,7 @@ Rainbow.parse = function(data, starting_index) {
                 if (element_starting_index === "" || (isNaN(Number(element_starting_index)) && Rainbow.colours.indexOf(starting_index) !== -1)) element_starting_index = colour_index;
                 for (j = 0; j < children.length; j++) {
                     if (children.item(j).nodeType !== 3) continue;
-                    elements.item(i).replaceChild(Rainbow.parseText(children.item(j).textContent, elements.item(i).dataset.rainbow), children.item(j));
+                    elements.item(i).replaceChild(Rainbow.parse(children.item(j).textContent, element_starting_index), children.item(j));
                 }
             }
             r = data;
