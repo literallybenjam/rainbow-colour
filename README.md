@@ -91,6 +91,13 @@ The return value of `Rainbow.parse(element, starting_index)` is the element whic
 Note that `Rainbow.parse(element, starting_index)` will *only* parse text node children of elements with `data-rainbow` set; it will *not* parse element children.
 This not only allows for faster parsing, but also prevents parsing the same element multiple times should `Rainbow.parse()` be called more than once.
 
+###  Rainbow.timeParse(element)  ###
+
+`Rainbow.timeParse(element)` parses the given `element` by finding every `<time datetime>` descendant and assigning a colour based on its date.
+This is based on a complicated process that depends on the format of the date provided; for example, YYYY-MM assigns colours based on the month, but YYYY-MM-DD assigns colours based on the day.
+`Rainbow.timeParse()` does not assign a colour to `datetime` strings that consist of durations or which are solely time-zone offsets.
+The `data-rainbow-skip` attribute can be used to make the parser skip over a given element.
+
 ## Endmatter:
 
 RAINBOW was coded by [@literallybenjam](https://twitter.com/literallybenjam).
