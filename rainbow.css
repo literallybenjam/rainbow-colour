@@ -12,14 +12,6 @@
     color: inherit;
 }
 
-*:root:root:root a[href]:hover *::-moz-selection, *:root:root:root *[data-colour] *:not([data-colour])::-moz-selection {
-    background-color: inherit;
-}
-
-*:root:root:root a[href]:hover *::selection, *:root:root:root *[data-colour] *:not([data-colour])::selection {
-    background-color: inherit;
-}
-
 /*  TRANSITIONS  */
 
 a[href], *.colour-link, *[data-colour-transition] {
