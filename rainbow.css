@@ -12,6 +12,10 @@
     color: inherit;
 }
 
+*:root:root:root a[href]:hover *::selection, *:root:root:root *[data-colour] *:not(a):not([data-colour])::selection, *:root:root:root *[data-colour] a:not([href]):not([data-colour])::selection, *:root:root:root *[data-colour] a[href]:not(:hover):not([data-colour])::selection {
+    background-color: inherit;
+}
+
 /*  TRANSITIONS  */
 
 a[href], *.colour-link, *[data-colour-transition] {
