@@ -55,6 +55,3 @@ Rainbow.parse = function(data, starting_index) {
     return r;
 
 }
-
-Rainbow.parse = function(element) {
-}
