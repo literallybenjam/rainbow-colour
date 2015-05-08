@@ -17,7 +17,7 @@ Rainbow.parse = function(data, starting_index) {
 
     switch (typeof text) {
 
-        case "text":
+        case "string":
             r = document.createElement("SPAN");
             var final_text = "";
             for (i = 0; i < data.length; i++) {
@@ -49,6 +49,7 @@ Rainbow.parse = function(data, starting_index) {
                 }
             }
             r = data;
+            break;
 
     }
 
