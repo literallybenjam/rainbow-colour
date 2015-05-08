@@ -67,7 +67,7 @@ Rainbow.timeParse = function(element) {
         time_element = time_elements.item(i);
 
         //  no datetime attribute
-        if (!time_element.datetime || time_element.dataset.rainbowSkip !== undefined) continue;
+        if (!time_element.datetime || time_element.dataset.rainbowSkip !== undefined || time_element.dataset.colour) continue;
 
         //  YYYY
         if (time_element.datetime.length === 4) time_element.dataset.colour = Rainbow.colours[Number(time_element.datetime) % 8];

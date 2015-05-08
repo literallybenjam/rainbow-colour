@@ -96,7 +96,9 @@ This not only allows for faster parsing, but also prevents parsing the same elem
 `Rainbow.timeParse(element)` parses the given `element` by finding every `<time datetime>` descendant and assigning a colour based on its date.
 This is based on a complicated process that depends on the format of the date provided; for example, YYYY-MM assigns colours based on the month, but YYYY-MM-DD assigns colours based on the day.
 `Rainbow.timeParse()` does not assign a colour to `datetime` strings that consist of durations or which are solely time-zone offsets.
+
 The `data-rainbow-skip` attribute can be used to make the parser skip over a given element.
+Similarly, `Rainbow.timeParse()` will not change the `data-colour` attribute on an element for which it has already been set.
 
 ## Endmatter:
 
