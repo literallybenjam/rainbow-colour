@@ -119,12 +119,11 @@ The following sites are supported:
 | wikipedia  |  white  |
 | google     | rainbow |
 | bitly      |   red   |
-| google+    |   red   |
 
 The return value of `Rainbow.parseSites()` is the element which was parsed.
 
 You can simulate the appearance of a site by setting the `data-rainbow-site` attribute to one of the above values.
-Note that `Rainbow.parseSites()` is not case-sensitive.
+Note that `Rainbow.parseSites()` is not case-sensitive, and subdomains are not checked.
 The `data-rainbow-skip` attribute can be used to make the parser skip over a given element.
 Similarly, `Rainbow.parseSites()` will not change the `data-colour` attribute on an element for which it has already been set.
 

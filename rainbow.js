@@ -111,31 +111,35 @@ Rainbow.parseSites = function(element) {
 
         if (elements.item(i).dataset.colour !== undefined) continue;
         if (elements.item(i).dataset.site !== undefined) search_criteria = elements.item(i).dataset.site;
-        else if (elements.item(i).tagName.toUpperCase() === "A") search_criteria = elements.item(i).hostname;
+        else if (elements.item(i).tagName.toUpperCase() === "A") search_criteria = elements.item(i).hostname
         else continue;
+
+        if (search_criteria.lastIndexOf(".", search_criteria.lastIndexOf(".") - 1));
+        search_criteria.substr(elements.item(i).hostname.lastIndexOf(".", elements.item(i).hostname.lastIndexOf(".") - 1) + 1);
 
         switch (search_criteria.toLowerCase()) {
 
             case "youtube":
             case "youtube.com":
-            case "www.youtube.com":
             case "youtu.be":
                 elements.item(i).dataset.colour = "red";
                 break;
 
             case "twitter":
             case "twitter.com":
-            case "www.twitter.com":
             case "t.co":
-            case "pic.twitter.com":
                 elements.item(i).dataset.colour = "cyan";
                 break;
 
             case "facebook":
             case "façbook":
             case "facebook.com":
-            case "www.facebook.com":
                 elements.item(i).dataset.colour = "blue";
+                break;
+
+            case "tumblr":
+            case "tumblr.com":
+                elements.item(i).dataset.rainbow = "red";
                 break;
 
             case "deviantart":
@@ -148,39 +152,27 @@ Rainbow.parseSites = function(element) {
             case "instagram":
             case "instgrm":
             case "instagram.com":
-            case "www.instagram.com":
                 elements.item(i).dataset.colour = "blue";
                 break;
 
             case "vine":
             case "vine.co":
-            case "www.vine.co":
                 elements.item(i).dataset.colour = "teal";
                 break;
 
             case "wikipedia":
             case "wikipedia.org":
-            case "www.wikipedia.org":
                 elements.item(i).dataset.colour = "white";
                 break;
 
             case "google":
             case "google.com":
-            case "www.google.com":
             case "goo.gl":
                 elements.item(i).dataset.rainbow = "blue";
                 break;
 
             case "bitly":
             case "bit.ly":
-            case "www.bit.ly":
-                elements.item(i).dataset.rainbow = "red";
-                break;
-
-            case "google+":
-            case "g+":
-            case "plus.google.com":
-            case "www.plus.google.com":
                 elements.item(i).dataset.rainbow = "red";
                 break;
 
