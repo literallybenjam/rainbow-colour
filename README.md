@@ -60,9 +60,9 @@ You can use the following classes to mimic the settings for certain elements:
 By including `rainbow.js` in your document, you can use the `Rainbow.parse(text, starting_index)` and `Rainbow.parse(element, starting_index)` functions.
 RAINBOW.js uses `Element.querySelectorAll` for element parsing; this is supported in all modern browsers but may be unavailable in some older ones.
 
-###  Rainbow.parse(text, starting_index)  ###
+###  Rainbow.ify(text, starting_index)  ###
 
-`Rainbow.parseText(text, starting_index)` will return a `<span>` element containing the given `text` in a rainbow, with the first colour defined by `starting_index`.
+`Rainbow.ify(text, starting_index)` will return a `<span>` element containing the given `text` in a rainbow, with the first colour defined by `starting_index`.
 The value for `text` must be a string.
 The value for `starting_index` must a value from the following array:
 
@@ -72,7 +72,7 @@ The value for `starting_index` must a value from the following array:
 
 (You can alternatively use the numeric index of the desired colour.)
 If `starting_index` is not specified or not valid, it will be assumed to be 0.
-As an example, `Rainbow.parse("hi :)", "red");` will return a `<span>` element with the following `outerHTML`:
+As an example, `Rainbow.ify("hi :)", "red");` will return a `<span>` element with the following `outerHTML`:
 
 ```html
 <span data-colour="transparent"><span data-colour="red">h</span><span data-colour="yellow">i</span> <span data-colour="green">:</span><span data-colour="teal">)</span></span>
@@ -80,25 +80,59 @@ As an example, `Rainbow.parse("hi :)", "red");` will return a `<span>` element w
 
 Note that whitespace is left unmodified.
 
-###  Rainbow.parse(element, starting_index)  ###
+###  Rainbow.parseRainbows(element)  ###
 
-`Rainbow.parse(element, starting_index)` parses the given `element` (`document.body` if not specified) by running `Rainbow.parse(text, starting_index)` on the text nodes of every element with the `data-rainbow` attribute set, and replacing them with the result.
+`Rainbow.parseRainbows(element)` parses the given `element` (`document.body` if not specified) by running `Rainbow.ify(text, starting_index)` on the text nodes of every element with the `data-rainbow` attribute set, and replacing them with the result.
 The value of `data-rainbow` is used to determine the `starting_index`, above.
-You may provide a `starting-index` to be used in the cases where `data-rainbow` is not specified; `data-rainbow` will always be used where given.
 
-The return value of `Rainbow.parse(element, starting_index)` is the element which was parsed.
+The return value of `Rainbow.parseRainbows()` is the element which was parsed.
 
-Note that `Rainbow.parse(element, starting_index)` will *only* parse text node children of elements with `data-rainbow` set; it will *not* parse element children.
-This not only allows for faster parsing, but also prevents parsing the same element multiple times should `Rainbow.parse()` be called more than once.
-
-###  Rainbow.timeParse(element)  ###
-
-`Rainbow.timeParse(element)` parses the given `element` by finding every `<time datetime>` descendant and assigning a colour based on its date.
-This is based on a complicated process that depends on the format of the date provided; for example, YYYY-MM assigns colours based on the month, but YYYY-MM-DD assigns colours based on the day.
-`Rainbow.timeParse()` does not assign a colour to `datetime` strings that consist of durations or which are solely time-zone offsets.
+Note that `Rainbow.parseRainbows()` will *only* parse text node children of elements with `data-rainbow` set; it will *not* parse element children.
+This not only allows for faster parsing, but also prevents parsing the same element multiple times should `Rainbow.parseRainbows()` be called more than once.
 
 The `data-rainbow-skip` attribute can be used to make the parser skip over a given element.
-Similarly, `Rainbow.timeParse()` will not change the `data-colour` attribute on an element for which it has already been set.
+
+###  Rainbow.parseTimes(element)  ###
+
+`Rainbow.parseTimes(element)` parses the given `element` by finding every `<time datetime>` descendant and assigning a colour based on its date.
+This is based on a complicated process that depends on the format of the date provided; for example, YYYY-MM assigns colours based on the month, but YYYY-MM-DD assigns colours based on the day.
+`Rainbow.parseTimes()` does not assign a colour to `datetime` strings that consist of durations or which are solely time-zone offsets.
+
+The return value of `Rainbow.parseTimes()` is the element which was parsed.
+
+The `data-rainbow-skip` attribute can be used to make the parser skip over a given element.
+Similarly, `Rainbow.parseTimes()` will not change the `data-colour` attribute on an element for which it has already been set.
+
+##  Rainbow.parseSites(element)  ##
+
+`Rainbow.parseSites(element)` parses the given `element` by finding every `<a href>` descendant and assigning a colour based on the referent of its `href` attribute.
+The following sites are supported:
+
+| site       | colour  |
+| :--------- | :-----: |
+| youtube    |   red   |
+| twitter    |  cyan   |
+| facebook   |  blue   |
+| deviantart |  green  |
+| instagram  |  blue   |
+| vine       |  teal   |
+| wikipedia  |  white  |
+| google     | rainbow |
+| bitly      |   red   |
+| google+    |   red   |
+
+The return value of `Rainbow.parseSites()` is the element which was parsed.
+
+You can simulate the appearance of a site by setting the `data-rainbow-site` attribute to one of the above values.
+Note that `Rainbow.parseSites()` is not case-sensitive.
+The `data-rainbow-skip` attribute can be used to make the parser skip over a given element.
+Similarly, `Rainbow.parseSites()` will not change the `data-colour` attribute on an element for which it has already been set.
+
+##  Rainbow.parseAll(element)  ##
+
+`Rainbow.parseAll(element)` parses the given `element` by running `Rainbow.parseRainbows()`, `Rainbow.parseTimes()`, and `Rainbow.parseSites()` on it.
+
+The return value of `Rainbow.parseAll()` is the element which was parsed.
 
 ## Endmatter:
 

@@ -2,62 +2,55 @@
 
 var Rainbow = {
     colours: ["cyan", "blue", "purple", "magenta", "red", "yellow", "green", "teal"],
-    parse: undefined,
-    timeParse: undefined
+    parseRainbows: undefined,
+    parseSites: undefined,
+    parseTimes: undefined
 };
 
-Rainbow.parse = function(data, starting_index) {
+Rainbow.ify = function(text, starting_index) {
 
     var colour_index = 0;
     var i;
-    var j;
-    var r;
+    var element;
     if (!isNaN(Number(starting_index))) colour_index = Number(starting_index) % 8;
     else if (Rainbow.colours.indexOf(starting_index) !== -1) colour_index = Rainbow.colours.indexOf(starting_index);
 
-    switch (typeof data) {
-
-        case "string":
-            r = document.createElement("SPAN");
-            var final_text = "";
-            for (i = 0; i < data.length; i++) {
-                if (/\s/.test(data[i])) {
-                    final_text += data[i];
-                }
-                else {
-                    final_text += '<span data-colour="' + Rainbow.colours[colour_index++] + '">' + data[i] + "</span>";
-                    colour_index %= Rainbow.colours.length;
-                }
-            }
-            r.innerHTML = final_text;
-            r.dataset.colour = "transparent";
-            break;
-
-        case "undefined":
-        case "object":
-            if (!data) data = document.body;
-            else if (data instanceof Document) data = data.documentElement;
-            else if (!(data instanceof Element)) break;
-            var elements = data.querySelectorAll("*[data-rainbow]");
-            for (i = 0; i < elements.length; i++) {
-                var children = elements.item(i).childNodes;
-                var element_starting_index = elements.item(i).dataset.rainbow;
-                if (element_starting_index === "" || (isNaN(Number(element_starting_index)) && Rainbow.colours.indexOf(starting_index) !== -1)) element_starting_index = colour_index;
-                for (j = 0; j < children.length; j++) {
-                    if (children.item(j).nodeType !== 3) continue;
-                    elements.item(i).replaceChild(Rainbow.parse(children.item(j).textContent, element_starting_index), children.item(j));
-                }
-            }
-            r = data;
-            break;
-
+    element = document.createElement("SPAN");
+    var final_text = "";
+    for (i = 0; i < text.length; i++) {
+        if (/\s/.test(text[i])) {
+            final_text += text[i];
+        }
+        else {
+            final_text += '<span data-colour="' + Rainbow.colours[colour_index++] + '">' + text[i] + "</span>";
+            colour_index %= Rainbow.colours.length;
+        }
     }
+    element.innerHTML = final_text;
+    element.dataset.colour = "transparent";
 
-    return r;
+    return element;
 
 }
 
-Rainbow.timeParse = function(element) {
+Rainbow.parseRainbows = function(element) {
+    var i;
+    var j;
+    if (!element) element = document.body;
+    else if (element instanceof Document) element = element.documentElement;
+    else if (!(element instanceof Element) || element.hasAttribute("data-rainbow-skip")) return;
+    var elements = element.querySelectorAll("*[data-rainbow]");
+    for (i = 0; i < elements.length; i++) {
+        var children = elements.item(i).childNodes;
+        for (j = 0; j < children.length; j++) {
+            if (children.item(j).nodeType !== 3) continue;
+            elements.item(i).replaceChild(Rainbow.ify(children.item(j).textContent, elements.item(i).dataset.rainbow), children.item(j));
+        }
+    }
+    return element;
+}
+
+Rainbow.parseTimes = function(element) {
 
     var time_elements = element.getElementsByTagName("TIME");
     var time_element;
@@ -67,7 +60,7 @@ Rainbow.timeParse = function(element) {
         time_element = time_elements.item(i);
 
         //  no dateTime attribute
-        if (!time_element.dateTime || time_element.dataset.rainbowSkip !== undefined || time_element.dataset.colour !== undefined) continue;
+        if (!time_element.dateTime || element.hasAttribute("data-rainbow-skip") || time_element.dataset.colour !== undefined) continue;
 
         //  YYYY
         if (time_element.dateTime.length === 4) time_element.dataset.colour = Rainbow.colours[Number(time_element.dateTime) % 8];
@@ -106,4 +99,100 @@ Rainbow.timeParse = function(element) {
     }
     return element;
 
+}
+
+Rainbow.parseSites = function(element) {
+
+    var i;
+    var elements = element.querySelectorAll("a[href], *[data-rainbow-site]");
+    var search_criteria;
+
+    for (i = 0; i < elements.length; i++) {
+
+        if (elements.item(i).dataset.colour !== undefined) continue;
+        if (elements.item(i).dataset.site !== undefined) search_criteria = elements.item(i).dataset.site;
+        else if (elements.item(i).tagName.toUpperCase() === "A") search_criteria = elements.item(i).hostname;
+        else continue;
+
+        switch (search_criteria.toLowerCase()) {
+
+            case "youtube":
+            case "youtube.com":
+            case "www.youtube.com":
+            case "youtu.be":
+                elements.item(i).dataset.colour = "red";
+                break;
+
+            case "twitter":
+            case "twitter.com":
+            case "www.twitter.com":
+            case "t.co":
+            case "pic.twitter.com":
+                elements.item(i).dataset.colour = "cyan";
+                break;
+
+            case "facebook":
+            case "façbook":
+            case "facebook.com":
+            case "www.facebook.com":
+                elements.item(i).dataset.colour = "blue";
+                break;
+
+            case "deviantart":
+            case "da":
+            case "deviantart.com":
+            case "fav.me":
+                elements.item(i).dataset.colour = "green";
+                break;
+
+            case "instagram":
+            case "instgrm":
+            case "instagram.com":
+            case "www.instagram.com":
+                elements.item(i).dataset.colour = "blue";
+                break;
+
+            case "vine":
+            case "vine.co":
+            case "www.vine.co":
+                elements.item(i).dataset.colour = "teal";
+                break;
+
+            case "wikipedia":
+            case "wikipedia.org":
+            case "www.wikipedia.org":
+                elements.item(i).dataset.colour = "white";
+                break;
+
+            case "google":
+            case "google.com":
+            case "www.google.com":
+            case "goo.gl":
+                elements.item(i).dataset.rainbow = "blue";
+                break;
+
+            case "bitly":
+            case "bit.ly":
+            case "www.bit.ly":
+                elements.item(i).dataset.rainbow = "red";
+                break;
+
+            case "google+":
+            case "g+":
+            case "plus.google.com":
+            case "www.plus.google.com":
+                elements.item(i).dataset.rainbow = "red";
+                break;
+
+        }
+
+
+    }
+
+    return element;
+
+}
+
+Rainbow.parseAll = function(element) {
+    return Rainbow.parseRainbows(Rainbow.parseSites(Rainbow.parseTimes(element)));
 }
