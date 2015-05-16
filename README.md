@@ -119,7 +119,7 @@ The following sites are supported:
 | wikipedia  |  white  |
 | google     | rainbow |
 | bitly      |   red   |
-| google+    |   red   |
+| google+    |   red   |
 
 The return value of `Rainbow.parseSites()` is the element which was parsed.
 
