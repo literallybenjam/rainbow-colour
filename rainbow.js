@@ -114,7 +114,7 @@ Rainbow.parseSites = function(element) {
         else if (elements.item(i).tagName.toUpperCase() === "A") search_criteria = elements.item(i).hostname
         else continue;
 
-        if (search_criteria.lastIndexOf(".", search_criteria.lastIndexOf(".") - 1)) search_criteria = search_criteria.substr(elements.item(i).hostname.lastIndexOf(".", elements.item(i).hostname.lastIndexOf(".") - 1) + 1);
+        if (search_criteria.lastIndexOf(".", search_criteria.lastIndexOf(".") - 1)) search_criteria = search_criteria.substr(search_criteria.lastIndexOf(".", search_criteria.lastIndexOf(".") - 1) + 1);
 
         switch (search_criteria.toLowerCase()) {
 
