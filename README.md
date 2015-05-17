@@ -113,6 +113,7 @@ The following sites are supported:
 | youtube    |   red   |
 | twitter    |  cyan   |
 | facebook   |  blue   |
+| tumblr     |  blue   |
 | deviantart |  green  |
 | instagram  |  blue   |
 | vine       |  teal   |

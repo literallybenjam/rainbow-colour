@@ -138,7 +138,7 @@ Rainbow.parseSites = function(element) {
 
             case "tumblr":
             case "tumblr.com":
-                elements.item(i).dataset.rainbow = "red";
+                elements.item(i).dataset.colour = "blue";
                 break;
 
             case "deviantart":
