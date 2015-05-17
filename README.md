@@ -108,19 +108,19 @@ Similarly, `Rainbow.parseTimes()` will not change the `data-colour` attribute on
 `Rainbow.parseSites(element)` parses the given `element` by finding every `<a href>` descendant and assigning a colour based on the referent of its `href` attribute.
 The following sites are supported:
 
-| site       | colour    |
-| :--------- | :-------: |
-| youtube    | red       |
-| twitter    | cyan      |
-| facebook   | blue      |
-| tumblr     | blue-dark |
-| deviantart | green     |
-| instagram  | blue      |
-| vine       | teal      |
-| wikipedia  | white     |
-| google     | rainbow   |
-| bitly      | red       |
-| itch.io    | red-light |
+| site       | colour  |
+| :--------- | :-----: |
+| youtube    | red     |
+| twitter    | cyan    |
+| facebook   | blue    |
+| tumblr     | blue    |
+| deviantart | green   |
+| instagram  | blue    |
+| vine       | teal    |
+| wikipedia  | white   |
+| google     | rainbow |
+| bitly      | red     |
+| itch.io    | red     |
 
 The return value of `Rainbow.parseSites()` is the element which was parsed.
 
