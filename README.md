@@ -1,17 +1,21 @@
 #  RAINBOW  #
 
-A CSS colour palette providing a rainbow of colours
+A CSS colour palette providing a rainbow of colours.
 
-##  BASIC USAGE  ##
+##  Basic usage:  ##
 
 To use the colours provided in RAINBOW, set the `data-rainbow-colour` and the `data-rainbow-background` attribute on an element to one or more colour-values (explained below).
 
-Setting these attributes on the root element of the page may have a special effect on descendant elements in order to create a clearer and more cohesive style; as such, specifying a `data-rainbow-colour` and a `data-rainbow-background` for the root element is highly recommended.
-You can use the `data-rainbow-accent` attribute to set the accent colour of a page; this only has an effect when used on the root element.
+In addition, the `data-rainbow-theme` attribute can be used to switch between a `light` and `dark` appearance; by default, the `light` appearance is used.
+
+The `data-rainbow-accent` attribute sets the accent colour of a page; this must be one of the eight primary colours.
+If not set, the accent colour will be grey.
+
+`data-rainbow-theme` and `data-rainbow-accent` only have an effect when used on the root element.
 
 ```html
 <!DOCTYPE html>
-<html data-rainbow-colour="light" data-rainbow-background="dim" data-rainbow-accent="red">
+<html data-rainbow-theme="light" data-rainbow-accent="red">
     <head>
         <title>Sample #2</title>
         <link rel="stylesheet" type="text/css" href="rainbow.css">
@@ -22,7 +26,7 @@ You can use the `data-rainbow-accent` attribute to set the accent colour of a pa
 </html>
 ```
 
-##  COLOUR-VALUES  ##
+##  Colour-values:  ##
 
 There are eight colours available for use in RAINBOW:
 
@@ -41,7 +45,7 @@ Finally, there are a few extra colour-values which you can use in RAINBOW:
 
 These correspond to their values in CSS.
 
-##  CSS TRANSITIONS  ##
+##  CSS transitions:  ##
 
 You can apply a CSS transition to an element with `data-rainbow-transition`.
 This is the default behaviour for links.
@@ -49,13 +53,26 @@ This is the default behaviour for links.
 
 Transitions require browser support of the `transition` CSS property.
 
-##  CLASSES  ##
+##  ::before and ::after:  ##
+
+By default, RAINBOW styles ::before and ::after pseudo-elements.
+You can disable this with the following CSS code:
+
+```css
+*:root:root:root:root *::before, *:root:root:root:root *::after {
+    color: inherit;
+}
+```
+
+(The `*:root:root:root:root` is required to give the code proper specificity.)
+
+##  Classes:  ##
 
 You can use the following classes to mimic the settings for certain elements:
 
 `rainbow-accent` `rainbow-code` `rainbow-emphasis` `rainbow-heading` `rainbow-link` `rainbow-mark` `rainbow-secondary` `rainbow-strong`
 
-##  RAINBOW.js  ##
+##  RAINBOW.js:  ##
 
 By including `rainbow.js` in your document, you can use the `Rainbow.parse(text, starting_index)` and `Rainbow.parse(element, starting_index)` functions.
 RAINBOW.js uses `Element.querySelectorAll` for element parsing; this is supported in all modern browsers but may be unavailable in some older ones.
@@ -104,7 +121,7 @@ The return value of `Rainbow.parseTimes()` is the element which was parsed.
 The `data-rainbow-skip` attribute can be used to make the parser skip over a given element.
 Similarly, `Rainbow.parseTimes()` will not change the `data-colour` attribute on an element for which it has already been set.
 
-##  Rainbow.parseSites(element)  ##
+###  Rainbow.parseSites(element)  ###
 
 `Rainbow.parseSites(element)` parses the given `element` by finding every `<a href>` descendant and assigning a colour based on the referent of its `href` attribute.
 The following sites are supported:
@@ -130,13 +147,13 @@ Note that `Rainbow.parseSites()` is not case-sensitive, and subdomains are not c
 The `data-rainbow-skip` attribute can be used to make the parser skip over a given element.
 Similarly, `Rainbow.parseSites()` will not change the `data-colour` attribute on an element for which it has already been set.
 
-##  Rainbow.parseAll(element)  ##
+###  Rainbow.parseAll(element)  ###
 
 `Rainbow.parseAll(element)` parses the given `element` by running `Rainbow.parseRainbows()`, `Rainbow.parseTimes()`, and `Rainbow.parseSites()` on it.
 
 The return value of `Rainbow.parseAll()` is the element which was parsed.
 
-## Endmatter:
+##  Endmatter:  ##
 
 RAINBOW was coded by [@literallybenjam](https://twitter.com/literallybenjam).
 It is licensed under [the Unlicense](http://unlicense.org/UNLICENSE).
