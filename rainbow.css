@@ -31,14 +31,6 @@ a[href]:hover {
     text-decoration-color: transparent;
 }
 
-*:root a[href]:not([data-rainbow-colour]):hover, *:root *.rainbow-link:not([data-rainbow-colour]):hover {
-    color: #636363;
-}
-
-*:root[data-rainbow-theme="dark"] a[href]:not([data-rainbow-colour]):hover, *:root[data-rainbow-theme="dark"] *.rainbow-link:not([data-rainbow-colour]):hover {
-    color: #a3a3a3;
-}
-
 /*  BASIC COLOURING  */
 
 *:root:root:root *[data-rainbow-colour|="cyan"] {
