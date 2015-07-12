@@ -15,7 +15,7 @@ Rainbow.ify = function(text, starting_index) {
     if (!isNaN(Number(starting_index))) colour_index = Number(starting_index) % 8;
     else if (Rainbow.colours.indexOf(starting_index) !== -1) colour_index = Rainbow.colours.indexOf(starting_index);
 
-    element = document.createElement("SPAN");
+    element = document.createElement("span");
     var final_text = "";
     for (i = 0; i < text.length; i++) {
         if (/\s/.test(text[i])) {
@@ -27,7 +27,7 @@ Rainbow.ify = function(text, starting_index) {
         }
     }
     element.innerHTML = final_text;
-    element.dataset.colour = "transparent";
+    element.dataset.rainbowColour = "transparent";
 
     return element;
 
@@ -52,21 +52,23 @@ Rainbow.parseRainbows = function(element) {
 
 Rainbow.parseTimes = function(element) {
 
-    var time_elements = element.getElementsByTagName("TIME");
+    var time_elements = element.querySelectorAll("time[datetime], *[data-rainbow-datetime]");
     var time_element;
-    var date;
+    var datetime;
     for (var i = 0; i < time_elements.length; i++) {
 
         time_element = time_elements.item(i);
+        if (time_element.dataset && time_element.dataset.rainbowDatetime) datetime = time_element.dataset.rainbowDatetime;
+        else if (time_element.dateTime) datetime = time_element.dateTime;
 
         //  no dateTime attribute
-        if (!time_element.dateTime || time_element.hasAttribute("data-rainbow-skip") || time_element.dataset.colour !== undefined) continue;
+        if (!datetime || time_element.hasAttribute("data-rainbow-skip") || time_element.dataset.rainbowColour !== undefined) continue;
 
         //  YYYY
-        if (time_element.dateTime.length === 4) time_element.dataset.colour = Rainbow.colours[Number(time_element.dateTime) % 8];
+        if (datetime.length === 4) time_element.dataset.rainbowColour = Rainbow.colours[Number(time_element.dateTime) % 8];
 
         //  YYYY-MM
-        else if (time_element.dateTime.length === 7) time_element.dataset.colour = [
+        else if (datetime.length === 7) time_element.dataset.rainbowColour = [
             "red",           //  january
             "purple",        //  february
             "cyan",          //  march
@@ -79,22 +81,22 @@ Rainbow.parseTimes = function(element) {
             "teal",          //  october
             "yellow",        //  november
             "teal-light"     //  december
-        ][Number(time_element.dateTime.substr(5,2))];
+        ][Number(datetime.substr(5,2))];
 
         //  YYYY-MM-DD and YYYY-MM-DDT…
-        else if (time_element.dateTime.length >= 10 && time_element.dateTime[4] === "-") time_element.dataset.colour = Rainbow.colours[(Date.parse(time_element.dateTime.substr(0,10)) / 86400000) % 8];
+        else if (datetime.length >= 10 && datetime[4] === "-") time_element.dataset.rainbowColour = Rainbow.colours[(Date.parse(datetime.substr(0,10)) / 86400000) % 8];
 
         //  MM-DD
-        else if (time_element.dateTime.length === 5 && time_element.dateTime[2] === "-") time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-" + time_element.dateTime) / 86400000) % 8];
+        else if (datetime.length === 5 && datetime[2] === "-") time_element.dataset.rainbowColour = Rainbow.colours[(Date.parse("1970-" + datetime) / 86400000) % 8];
 
         //  HH:MM
-        else if (time_element.dateTime.length === 5 && time_element.dateTime[2] === ":")  time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-01-01T" + time_element.dateTime) / 60000) % 8];
+        else if (datetime.length === 5 && datetime[2] === ":")  time_element.dataset.rainbowColour = Rainbow.colours[(Date.parse("1970-01-01T" + datetime) / 60000) % 8];
 
         //  HH:MM:SS
-        else if (time_element.dateTime.length === 8 && time_element.dateTime[2] === ":")  time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-01-01T" + time_element.dateTime) / 1000) % 8];
+        else if (datetime.length === 8 && datetime[2] === ":")  time_element.dataset.rainbowColour = Rainbow.colours[(Date.parse("1970-01-01T" + datetime) / 1000) % 8];
 
         //  HH:MM:SS.mmm
-        else if (time_element.dateTime.length === 12 && time_element.dateTime[2] === ":")  time_element.dataset.colour = Rainbow.colours[(Date.parse("1970-01-01T" + time_element.dateTime)) % 8];
+        else if (datetime.length === 12 && datetime[2] === ":")  time_element.dataset.rainbowColour = Rainbow.colours[(Date.parse("1970-01-01T" + datetime)) % 8];
 
     }
     return element;
@@ -109,8 +111,8 @@ Rainbow.parseSites = function(element) {
 
     for (i = 0; i < elements.length; i++) {
 
-        if (elements.item(i).dataset.colour !== undefined) continue;
-        if (elements.item(i).dataset.site !== undefined) search_criteria = elements.item(i).dataset.site;
+        if (elements.item(i).dataset.rainbowColour !== undefined) continue;
+        if (elements.item(i).dataset.rainbowSite !== undefined) search_criteria = elements.item(i).dataset.rainbowSite;
         else if (elements.item(i).tagName.toUpperCase() === "A") search_criteria = elements.item(i).hostname
         else continue;
 
@@ -121,52 +123,52 @@ Rainbow.parseSites = function(element) {
             case "youtube":
             case "youtube.com":
             case "youtu.be":
-                elements.item(i).dataset.colour = "red";
+                elements.item(i).dataset.rainbowColour = "red";
                 break;
 
             case "twitter":
             case "twitter.com":
             case "t.co":
-                elements.item(i).dataset.colour = "cyan";
+                elements.item(i).dataset.rainbowColour = "cyan";
                 break;
 
             case "facebook":
             case "façbook":
             case "facebook.com":
-                elements.item(i).dataset.colour = "blue";
+                elements.item(i).dataset.rainbowColour = "blue";
                 break;
 
             case "tumblr":
             case "tumblr.com":
-                elements.item(i).dataset.colour = "blue";
+                elements.item(i).dataset.rainbowColour = "blue";
                 break;
 
             case "deviantart":
             case "da":
             case "deviantart.com":
             case "fav.me":
-                elements.item(i).dataset.colour = "green";
+                elements.item(i).dataset.rainbowColour = "green";
                 break;
 
             case "instagram":
             case "instgrm":
             case "instagram.com":
-                elements.item(i).dataset.colour = "blue";
+                elements.item(i).dataset.rainbowColour = "blue";
                 break;
 
             case "vine":
             case "vine.co":
-                elements.item(i).dataset.colour = "teal";
+                elements.item(i).dataset.rainbowColour = "teal";
                 break;
 
             case "wikipedia":
             case "wikipedia.org":
-                elements.item(i).dataset.colour = "white";
+                elements.item(i).dataset.rainbowColour = "white";
                 break;
 
             case "itch":
             case "itch.io":
-                elements.item(i).dataset.colour = "red";
+                elements.item(i).dataset.rainbowColour = "red";
                 break;
 
             case "google":

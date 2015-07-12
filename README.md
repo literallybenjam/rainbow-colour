@@ -4,14 +4,14 @@ A CSS colour palette providing a rainbow of colours
 
 ##  BASIC USAGE  ##
 
-To use the colours provided in RAINBOW, set the `data-colour` and the `data-colour-background` attribute on an element to one or more colour-values (explained below).
+To use the colours provided in RAINBOW, set the `data-rainbow-colour` and the `data-rainbow-background` attribute on an element to one or more colour-values (explained below).
 
-Setting these attributes on the root element of the page may have a special effect on descendant elements in order to create a clearer and more cohesive style; as such, specifying a `data-colour` and a `data-colour-background` for the root element is highly recommended.
-You can use the `data-colour-accent` attribute to set the accent colour of a page; this only has an effect when used on the root element.
+Setting these attributes on the root element of the page may have a special effect on descendant elements in order to create a clearer and more cohesive style; as such, specifying a `data-rainbow-colour` and a `data-rainbow-background` for the root element is highly recommended.
+You can use the `data-rainbow-accent` attribute to set the accent colour of a page; this only has an effect when used on the root element.
 
 ```html
 <!DOCTYPE html>
-<html data-colour="light" data-colour-background="dim" data-colour-accent="red">
+<html data-rainbow-colour="light" data-rainbow-background="dim" data-rainbow-accent="red">
     <head>
         <title>Sample #2</title>
         <link rel="stylesheet" type="text/css" href="rainbow.css">
@@ -43,7 +43,7 @@ These correspond to their values in CSS.
 
 ##  CSS TRANSITIONS  ##
 
-You can apply a CSS transition to an element with `data-colour-transition`.
+You can apply a CSS transition to an element with `data-rainbow-transition`.
 This is the default behaviour for links.
 (Note that this may override transitions set elsewhere!)
 
@@ -53,7 +53,7 @@ Transitions require browser support of the `transition` CSS property.
 
 You can use the following classes to mimic the settings for certain elements:
 
-`colour-accent` `colour-code` `colour-emphasis` `colour-heading` `colour-link` `colour-mark` `color-secondary` `colour-strong`
+`rainbow-accent` `rainbow-code` `rainbow-emphasis` `rainbow-heading` `rainbow-link` `rainbow-mark` `rainbow-secondary` `rainbow-strong`
 
 ##  RAINBOW.js  ##
 
@@ -75,7 +75,7 @@ If `starting_index` is not specified or not valid, it will be assumed to be 0.
 As an example, `Rainbow.ify("hi :)", "red");` will return a `<span>` element with the following `outerHTML`:
 
 ```html
-<span data-colour="transparent"><span data-colour="red">h</span><span data-colour="yellow">i</span> <span data-colour="green">:</span><span data-colour="teal">)</span></span>
+<span data-rainbow-colour="transparent"><span data-rainbow-colour="red">h</span><span data-rainbow-colour="yellow">i</span> <span data-rainbow-colour="green">:</span><span data-rainbow-colour="teal">)</span></span>
 ```
 
 Note that whitespace is left unmodified.
@@ -95,6 +95,7 @@ The `data-rainbow-skip` attribute can be used to make the parser skip over a giv
 ###  Rainbow.parseTimes(element)  ###
 
 `Rainbow.parseTimes(element)` parses the given `element` by finding every `<time datetime>` descendant and assigning a colour based on its date.
+It will also parse elements for which the `data-rainbow-datetime` attribute is set; this has preference when set on a `<time>` element.
 This is based on a complicated process that depends on the format of the date provided; for example, YYYY-MM assigns colours based on the month, but YYYY-MM-DD assigns colours based on the day.
 `Rainbow.parseTimes()` does not assign a colour to `datetime` strings that consist of durations or which are solely time-zone offsets.
 
