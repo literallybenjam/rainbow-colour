@@ -139,6 +139,7 @@ The following sites are supported:
 | google     | rainbow |
 | bitly      | red     |
 | itch.io    | red     |
+| github     | black   |
 
 The return value of `Rainbow.parseSites()` is the element which was parsed.
 

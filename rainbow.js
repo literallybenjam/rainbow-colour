@@ -175,11 +175,17 @@ Rainbow.parseSites = function(element) {
             case "google.com":
             case "goo.gl":
                 elements.item(i).dataset.rainbow = "blue";
+                Rainbow.parseRainbows(elements.item(i));
                 break;
 
             case "bitly":
             case "bit.ly":
-                elements.item(i).dataset.rainbow = "red";
+                elements.item(i).dataset.rainbowColour = "red";
+                break;
+
+            case "github":
+            case "github.com":
+                elements.item(i).dataset.rainbowColour = "black";
                 break;
 
         }
