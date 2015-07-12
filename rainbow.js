@@ -188,6 +188,11 @@ Rainbow.parseSites = function(element) {
                 elements.item(i).dataset.rainbowColour = "black";
                 break;
 
+            case "medium":
+            case "medium.com":
+                elements.item(i).dataset.rainbowColour = "black";
+                break;
+
         }
 
 

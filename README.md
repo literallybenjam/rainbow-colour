@@ -140,6 +140,7 @@ The following sites are supported:
 | bitly      | red     |
 | itch.io    | red     |
 | github     | black   |
+| medium     | black   |
 
 The return value of `Rainbow.parseSites()` is the element which was parsed.
 
