@@ -8,7 +8,7 @@
     text-decoration-color: currentColor;
 }
 
-*:root:root:root a[href]:hover *, *:root:root:root *[data-rainbow-colour] *:not(a):not([data-rainbow-colour]), *:root:root:root *[data-rainbow-colour] a:not([href]):not([data-rainbow-colour]), *:root:root:root *[data-rainbow-colour] a[href]:not(:hover):not([data-rainbow-colour]) {
+*:root:root:root a[href] *:not([data-rainbow-colour]), *:root:root:root a[href]:hover *, *:root:root:root *[data-rainbow-colour] *:not(a):not([data-rainbow-colour]), *:root:root:root *[data-rainbow-colour] a:not([href]):not([data-rainbow-colour]), *:root:root:root *[data-rainbow-colour] a[href]:not(:hover):not([data-rainbow-colour]) {
     color: inherit;
 }
 
