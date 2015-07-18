@@ -22,7 +22,7 @@ Rainbow.ify = function(text, starting_index) {
             final_text += text[i];
         }
         else {
-            final_text += '<span data-colour="' + Rainbow.colours[colour_index++] + '">' + text[i] + "</span>";
+            final_text += '<span data-rainbow-colour="' + Rainbow.colours[colour_index++] + '">' + text[i] + "</span>";
             colour_index %= Rainbow.colours.length;
         }
     }
@@ -163,7 +163,7 @@ Rainbow.parseSites = function(element) {
 
             case "wikipedia":
             case "wikipedia.org":
-                elements.item(i).dataset.rainbowColour = "white";
+                elements.item(i).dataset.rainbowColour = "black";
                 break;
 
             case "itch":

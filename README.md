@@ -135,7 +135,7 @@ The following sites are supported:
 | deviantart | green   |
 | instagram  | blue    |
 | vine       | teal    |
-| wikipedia  | white   |
+| wikipedia  | black   |
 | google     | rainbow |
 | bitly      | red     |
 | itch.io    | red     |
