@@ -607,75 +607,75 @@ a[href]:hover {
     background-color: #1c4b3b;
 }
 
-*:root mark[data-rainbow-colour], *:root a[href][data-rainbow-colour] {
+*:root mark[data-rainbow-colour], *:root a[href][data-rainbow-colour]:hover {
     background-color: #cccccc;
 }
 
-*:root mark[data-rainbow-colour|="cyan"], *:root a[href][data-rainbow-colour|="cyan"] {
+*:root mark[data-rainbow-colour|="cyan"], *:root a[href][data-rainbow-colour|="cyan"]:hover {
     background-color: #bfe7f2;
 }
 
-*:root mark[data-rainbow-colour|="blue"], *:root a[href][data-rainbow-colour|="blue"] {
+*:root mark[data-rainbow-colour|="blue"], *:root a[href][data-rainbow-colour|="blue"]:hover {
     background-color: #d0d1f6;
 }
 
-*:root mark[data-rainbow-colour|="purple"], *:root a[href][data-rainbow-colour|="purple"] {
+*:root mark[data-rainbow-colour|="purple"], *:root a[href][data-rainbow-colour|="purple"]:hover {
     background-color: #eabdff;
 }
 
-*:root mark[data-rainbow-colour|="magenta"], *:root a[href][data-rainbow-colour|="magenta"] {
+*:root mark[data-rainbow-colour|="magenta"], *:root a[href][data-rainbow-colour|="magenta"]:hover {
     background-color: #f0b2d8;
 }
 
-*:root mark[data-rainbow-colour|="red"], *:root a[href][data-rainbow-colour|="red"] {
+*:root mark[data-rainbow-colour|="red"], *:root a[href][data-rainbow-colour|="red"]:hover {
     background-color: #f9a59b;
 }
 
-*:root mark[data-rainbow-colour|="yellow"], *:root a[href][data-rainbow-colour|="yellow"] {
+*:root mark[data-rainbow-colour|="yellow"], *:root a[href][data-rainbow-colour|="yellow"]:hover {
     background-color: #fcf0be;
 }
 
-*:root mark[data-rainbow-colour|="green"], *:root a[href][data-rainbow-colour|="green"] {
+*:root mark[data-rainbow-colour|="green"], *:root a[href][data-rainbow-colour|="green"]:hover {
     background-color: #d5fcbb;
 }
 
-*:root mark[data-rainbow-colour|="teal"], *:root a[href][data-rainbow-colour|="teal"] {
+*:root mark[data-rainbow-colour|="teal"], *:root a[href][data-rainbow-colour|="teal"]:hover {
     background-color: #bdf0df;
 }
 
-*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour] {
+*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour]:hover {
     background-color: #0c0c0c;
 }
 
-*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="cyan"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="cyan"] {
+*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="cyan"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="cyan"]:hover {
     background-color: #00495c;
 }
 
-*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="blue"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="blue"] {
+*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="blue"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="blue"]:hover {
     background-color: #383966;
 }
 
-*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="purple"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="purple"] {
+*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="purple"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="purple"]:hover {
     background-color: #4c3159;
 }
 
-*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="magenta"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="magenta"] {
+*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="magenta"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="magenta"]:hover {
     background-color: #592846;
 }
 
-*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="red"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="red"] {
+*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="red"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="red"]:hover {
     background-color: #5d2721;
 }
 
-*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="yellow"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="yellow"] {
+*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="yellow"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="yellow"]:hover {
     background-color: #4f420d;
 }
 
-*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="green"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="green"] {
+*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="green"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="green"]:hover {
     background-color: #1f4505;
 }
 
-*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="teal"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="teal"] {
+*:root[data-rainbow-theme="dark"] mark[data-rainbow-colour|="teal"], *:root[data-rainbow-theme="dark"] a[href][data-rainbow-colour|="teal"]:hover {
     background-color: #1c4b3b;
 }
 
