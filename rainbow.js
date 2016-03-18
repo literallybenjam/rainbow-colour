@@ -71,17 +71,17 @@ Rainbow.parseTimes = function(element) {
         else if (datetime.length === 7) time_element.dataset.rainbowColour = [
             "red",           //  january
             "purple",        //  february
-            "cyan",          //  march
+            "blue-light",    //  march
             "red-light",     //  april
             "green",         //  may
             "magenta-light", //  june
-            "magenta",       //  july
-            "green-light",   //  august
+            "cyan",          //  july
+            "magenta",       //  august
             "blue",          //  september
             "teal",          //  october
             "yellow",        //  november
             "teal-light"     //  december
-        ][Number(datetime.substr(5,2))];
+        ][Number(datetime.substr(5,2) - 1)];
 
         //  YYYY-MM-DD and YYYY-MM-DDT…
         else if (datetime.length >= 10 && datetime[4] === "-") time_element.dataset.rainbowColour = Rainbow.colours[(Date.parse(datetime.substr(0,10)) / 86400000) % 8];
