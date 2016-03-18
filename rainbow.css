@@ -355,35 +355,35 @@ a[href]:hover {
 
 /*  ACCENT  */
 
-*:root[data-rainbow-accent="cyan"] a[href], *:root[data-rainbow-accent="cyan"] *.rainbow-link, *:root[data-rainbow-accent="cyan"] b, *:root[data-rainbow-accent="cyan"] dfn, *:root[data-rainbow-accent="cyan"] time {
+*:root[data-rainbow-accent="cyan"] a[href], *:root[data-rainbow-accent="cyan"] *.rainbow-link, *:root[data-rainbow-accent="cyan"] b, *:root[data-rainbow-accent="cyan"] dfn, *:root[data-rainbow-accent="cyan"] time, *:root[data-rainbow-accent="cyan"] *.rainbow-accent {
     color: #31b9db;
 }
 
-*:root[data-rainbow-accent="blue"] a[href], *:root[data-rainbow-accent="blue"] *.rainbow-link, *:root[data-rainbow-accent="blue"] b, *:root[data-rainbow-accent="blue"] dfn, *:root[data-rainbow-accent="blue"] time {
+*:root[data-rainbow-accent="blue"] a[href], *:root[data-rainbow-accent="blue"] *.rainbow-link, *:root[data-rainbow-accent="blue"] b, *:root[data-rainbow-accent="blue"] dfn, *:root[data-rainbow-accent="blue"] time, *:root[data-rainbow-accent="blue"] *.rainbow-accent {
     color: #7476fc;
 }
 
-*:root[data-rainbow-accent="purple"] a[href], *:root[data-rainbow-accent="purple"] *.rainbow-link, *:root[data-rainbow-accent="purple"] b, *:root[data-rainbow-accent="purple"] dfn, *:root[data-rainbow-accent="purple"] time {
+*:root[data-rainbow-accent="purple"] a[href], *:root[data-rainbow-accent="purple"] *.rainbow-link, *:root[data-rainbow-accent="purple"] b, *:root[data-rainbow-accent="purple"] dfn, *:root[data-rainbow-accent="purple"] time, *:root[data-rainbow-accent="purple"] *.rainbow-accent {
     color: #c258f2;
 }
 
-*:root[data-rainbow-accent="magenta"] a[href], *:root[data-rainbow-accent="magenta"] *.rainbow-link, *:root[data-rainbow-accent="magenta"] b, *:root[data-rainbow-accent="magenta"] dfn, *:root[data-rainbow-accent="magenta"] time {
+*:root[data-rainbow-accent="magenta"] a[href], *:root[data-rainbow-accent="magenta"] *.rainbow-link, *:root[data-rainbow-accent="magenta"] b, *:root[data-rainbow-accent="magenta"] dfn, *:root[data-rainbow-accent="magenta"] time, *:root[data-rainbow-accent="magenta"] *.rainbow-accent {
     color: #e63ca4;
 }
 
-*:root[data-rainbow-accent="red"] a[href], *:root[data-rainbow-accent="red"] *.rainbow-link, *:root[data-rainbow-accent="red"] b, *:root[data-rainbow-accent="red"] dfn, *:root[data-rainbow-accent="red"] time {
+*:root[data-rainbow-accent="red"] a[href], *:root[data-rainbow-accent="red"] *.rainbow-link, *:root[data-rainbow-accent="red"] b, *:root[data-rainbow-accent="red"] dfn, *:root[data-rainbow-accent="red"] time, *:root[data-rainbow-accent="red"] *.rainbow-accent {
     color: #e83f2c;
 }
 
-*:root[data-rainbow-accent="yellow"] a[href], *:root[data-rainbow-accent="yellow"] *.rainbow-link, *:root[data-rainbow-accent="yellow"] b, *:root[data-rainbow-accent="yellow"] dfn, *:root[data-rainbow-accent="yellow"] time {
+*:root[data-rainbow-accent="yellow"] a[href], *:root[data-rainbow-accent="yellow"] *.rainbow-link, *:root[data-rainbow-accent="yellow"] b, *:root[data-rainbow-accent="yellow"] dfn, *:root[data-rainbow-accent="yellow"] time, *:root[data-rainbow-accent="yellow"] *.rainbow-accent {
     color: #f6d037;
 }
 
-*:root[data-rainbow-accent="green"] a[href], *:root[data-rainbow-accent="green"] *.rainbow-link, *:root[data-rainbow-accent="green"] b, *:root[data-rainbow-accent="green"] dfn, *:root[data-rainbow-accent="green"] time {
+*:root[data-rainbow-accent="green"] a[href], *:root[data-rainbow-accent="green"] *.rainbow-link, *:root[data-rainbow-accent="green"] b, *:root[data-rainbow-accent="green"] dfn, *:root[data-rainbow-accent="green"] time, *:root[data-rainbow-accent="green"] *.rainbow-accent {
     color: #6ad622;
 }
 
-*:root[data-rainbow-accent="teal"] a[href], *:root[data-rainbow-accent="teal"] *.rainbow-link, *:root[data-rainbow-accent="teal"] b, *:root[data-rainbow-accent="teal"] dfn, *:root[data-rainbow-accent="teal"] time {
+*:root[data-rainbow-accent="teal"] a[href], *:root[data-rainbow-accent="teal"] *.rainbow-link, *:root[data-rainbow-accent="teal"] b, *:root[data-rainbow-accent="teal"] dfn, *:root[data-rainbow-accent="teal"] time, *:root[data-rainbow-accent="teal"] *.rainbow-accent {
     color: #49cfa2;
 }
 
